@@ -2,7 +2,7 @@
 
 **Identity Governance | Active Directory | Microsoft Entra ID | RBAC**
 
-📍 Lagos, Nigeria · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b · contact@anlogix.com · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
+📍 Lagos, Nigeria · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b · tayour.ola@gmail.com · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
 
 ## Professional profile
 
@@ -72,7 +72,7 @@ Every featured case study includes a scenario, scope and authorization, my indiv
 ## Contact
 
 - **LinkedIn:** https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
-- **Email:** contact@anlogix.com
+- **Email:** tayour.ola@gmail.com
 - **GitHub:** https://github.com/Adekunle-sec
 
 ---
