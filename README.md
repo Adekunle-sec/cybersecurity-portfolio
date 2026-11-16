@@ -158,6 +158,9 @@ flowchart TD
 
 ## 📑 Evidence & Documentation Standards
 
+> [!NOTE]
+> **Confidentiality:** No real credentials, tokens, internal IPs, customer data, sensitive alerts, personal identifiers, or unapproved screenshots. Use synthetic or redacted evidence. Publish only materials approved for external sharing.
+
 Every case study in this repository adheres to strict international engineering and documentation standards:
 
 1. **Authorization & Ethical Representation:** All operations are conducted in authorized enterprise lab environments or supervised operational environments. Simulated training is clearly distinguished from live operational work.
