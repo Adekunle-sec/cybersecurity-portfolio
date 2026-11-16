@@ -46,10 +46,10 @@ All activities strictly adhere to global industry standards: **MITRE ATT&CK Ente
 #### Featured SOC Case Studies:
 | Case Study | Focus & What the Reviewer Will Learn | Direct Link |
 |:---|:---|:---|
-| **Authentication Alert Investigation** | Investigate Windows 4624/4625/4740 telemetry with KQL and document investigative conclusions | [Explore Case Study →](./halisans-operations/SOC/case-studies/01-authentication-alert-investigation/) |
-| **Defender Endpoint Triage** | Review endpoint alerts, collect permitted evidence, determine disposition, and escalate | [Explore Case Study →](./halisans-operations/SOC/case-studies/02-defender-endpoint-triage/) |
-| **Sentinel Automation Playbook** | Document incident-created triggers, ownership routing, automated testing, and safety checks | [Explore Case Study →](./halisans-operations/SOC/case-studies/03-sentinel-automation-playbook/) |
-| **SOC Monitoring Dashboard** | Create workbook queries, visualize telemetry trends, explain metrics, and validate alerts | [Explore Case Study →](./halisans-operations/SOC/case-studies/04-soc-monitoring-dashboard/) |
+| **Authentication Alert Investigation** | Investigate Windows 4624/4625/4740 telemetry with KQL and document investigative conclusions | [Explore Case Study →](./SOC/case-studies/01-authentication-alert-investigation/) |
+| **Defender Endpoint Triage** | Review endpoint alerts, collect permitted evidence, determine disposition, and escalate | [Explore Case Study →](./SOC/case-studies/02-defender-endpoint-triage/) |
+| **Sentinel Automation Playbook** | Document incident-created triggers, ownership routing, automated testing, and safety checks | [Explore Case Study →](./SOC/case-studies/03-sentinel-automation-playbook/) |
+| **SOC Monitoring Dashboard** | Create workbook queries, visualize telemetry trends, explain metrics, and validate alerts | [Explore Case Study →](./SOC/case-studies/04-soc-monitoring-dashboard/) |
 | **Advanced Cloud SOC Lab** | High-fidelity password spraying detection rule reducing MTTT from 18 min to < 3 min | [Explore Lab →](./labs/01-sentinel-defender-soc-lab/) |
 
 ---
@@ -68,10 +68,10 @@ All activities strictly adhere to global industry standards: **MITRE ATT&CK Ente
 #### Featured IAM Case Studies:
 | Case Study | Focus & What the Reviewer Will Learn | Direct Link |
 |:---|:---|:---|
-| **Joiner–Mover–Leaver Workflow** | Document authorized provisioning, changes, and deprovisioning with approval trails | [Explore Case Study →](./halisans-operations/IAM/case-studies/01-joiner-mover-leaver-workflow/) |
-| **Quarterly User Access Review** | Review entitlements, flag privilege exceptions, record owner decisions, and track fixes | [Explore Case Study →](./halisans-operations/IAM/case-studies/02-quarterly-access-review/) |
-| **RBAC & Least Privilege** | Implement an enterprise entitlement matrix and validate group/role assignments | [Explore Case Study →](./halisans-operations/IAM/case-studies/03-rbac-and-least-privilege/) |
-| **AD and Entra ID Administration** | Document identity configuration, GPOs, conditional access, and secure access controls | [Explore Case Study →](./halisans-operations/IAM/case-studies/04-ad-and-entra-id-administration/) |
+| **Joiner–Mover–Leaver Workflow** | Document authorized provisioning, changes, and deprovisioning with approval trails | [Explore Case Study →](./IAM/case-studies/01-joiner-mover-leaver-workflow/) |
+| **Quarterly User Access Review** | Review entitlements, flag privilege exceptions, record owner decisions, and track fixes | [Explore Case Study →](./IAM/case-studies/02-quarterly-access-review/) |
+| **RBAC & Least Privilege** | Implement an enterprise entitlement matrix and validate group/role assignments | [Explore Case Study →](./IAM/case-studies/03-rbac-and-least-privilege/) |
+| **AD and Entra ID Administration** | Document identity configuration, GPOs, conditional access, and secure access controls | [Explore Case Study →](./IAM/case-studies/04-ad-and-entra-id-administration/) |
 | **Enterprise RBAC Matrix Lab** | Production entitlement matrix enforcing SoD and least privilege across Tier 1–3 SOC | [Explore Lab →](./labs/02-iam-rbac-entitlement-matrix/) |
 
 ---
@@ -90,10 +90,10 @@ All activities strictly adhere to global industry standards: **MITRE ATT&CK Ente
 #### Featured GRC Case Studies:
 | Case Study | Focus & What the Reviewer Will Learn | Direct Link |
 |:---|:---|:---|
-| **Enterprise Risk Assessment** | Maintain a risk register with likelihood, impact, asset owners, treatment, and residual risk | [Explore Case Study →](./halisans-operations/GRC/case-studies/01-enterprise-risk-assessment/) |
-| **ISO 27001 Control Assessment** | Map control requirements to evidence, perform gap analysis, and document remediation | [Explore Case Study →](./halisans-operations/GRC/case-studies/02-iso-27001-control-assessment/) |
-| **Policy & Procedure Development** | Develop access control, acceptable use, and incident response governance procedures | [Explore Case Study →](./halisans-operations/GRC/case-studies/03-policy-and-procedure-development/) |
-| **Audit Evidence & Exception Tracking**| Build an evidence index, test ITGC control operation, and track exceptions to closure | [Explore Case Study →](./halisans-operations/GRC/case-studies/04-audit-evidence-and-exception-tracking/) |
+| **Enterprise Risk Assessment** | Maintain a risk register with likelihood, impact, asset owners, treatment, and residual risk | [Explore Case Study →](./GRC/case-studies/01-enterprise-risk-assessment/) |
+| **ISO 27001 Control Assessment** | Map control requirements to evidence, perform gap analysis, and document remediation | [Explore Case Study →](./GRC/case-studies/02-iso-27001-control-assessment/) |
+| **Policy & Procedure Development** | Develop access control, acceptable use, and incident response governance procedures | [Explore Case Study →](./GRC/case-studies/03-policy-and-procedure-development/) |
+| **Audit Evidence & Exception Tracking**| Build an evidence index, test ITGC control operation, and track exceptions to closure | [Explore Case Study →](./GRC/case-studies/04-audit-evidence-and-exception-tracking/) |
 | **ISO 27001 Audit Register Lab** | Comprehensive ITGC control evaluation and non-conformity tracking dashboard | [Explore Lab →](./labs/05-iso27001-grc-audit-register/) |
 
 ---
@@ -112,10 +112,10 @@ All activities strictly adhere to global industry standards: **MITRE ATT&CK Ente
 #### Featured Threat Intelligence Case Studies:
 | Case Study | Focus & What the Reviewer Will Learn | Direct Link |
 |:---|:---|:---|
-| **Threat Intelligence Assessment** | Ingest OTX/SOCRadar threat feeds, validate indicators, and evaluate local relevance | [Explore Case Study →](./halisans-operations/Security-Analysis/case-studies/01-threat-intelligence-assessment/) |
-| **IOC-to-Detection Handoff** | Translate a threat hypothesis into an operational KQL detection rule and SOC handoff | [Explore Case Study →](./halisans-operations/Security-Analysis/case-studies/02-ioc-to-detection-handoff/) |
-| **MITRE ATT&CK Mapping** | Map observed adversary behaviors to techniques, distinguishing evidence from assumptions | [Explore Case Study →](./halisans-operations/Security-Analysis/case-studies/03-mitre-attandck-mapping/) |
-| **Security Investigation Report** | Correlate telemetry, assess organizational impact, and formulate remediation actions | [Explore Case Study →](./halisans-operations/Security-Analysis/case-studies/04-security-investigation-report/) |
+| **Threat Intelligence Assessment** | Ingest OTX/SOCRadar threat feeds, validate indicators, and evaluate local relevance | [Explore Case Study →](./Security-Analysis/case-studies/01-threat-intelligence-assessment/) |
+| **IOC-to-Detection Handoff** | Translate a threat hypothesis into an operational KQL detection rule and SOC handoff | [Explore Case Study →](./Security-Analysis/case-studies/02-ioc-to-detection-handoff/) |
+| **MITRE ATT&CK Mapping** | Map observed adversary behaviors to techniques, distinguishing evidence from assumptions | [Explore Case Study →](./Security-Analysis/case-studies/03-mitre-attandck-mapping/) |
+| **Security Investigation Report** | Correlate telemetry, assess organizational impact, and formulate remediation actions | [Explore Case Study →](./Security-Analysis/case-studies/04-security-investigation-report/) |
 | **Threat Hunting & Detection Lab** | Behavioral detection rules targeting LockBit 3.0 and APT29 macro execution | [Explore Lab →](./labs/03-threat-intel-mitre-detection/) |
 
 ---
