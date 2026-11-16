@@ -13,7 +13,7 @@
 
 ## 🛡️ Executive Overview
 
-This repository represents the production **Cybersecurity Defense, Security Operations Center (SOC), Identity & Access Management (IAM), and GRC Engineering Portfolio** of **Adekunle Ola**. 
+This repository represents the production **Cybersecurity Analyst (SOC, Identity & Access Management (IAM), and GRC Engineering Portfolio** of **Adekunle Olanrewaju**. 
 
 It documents hands-on security operations, verified incident response playbooks, detection engineering using KQL, least-privilege entitlement matrices, and threat intelligence ingestion mapped to global industry standards (**MITRE ATT&CK, NIST CSF 2.0, ISO/IEC 27001:2022**).
 
@@ -113,7 +113,7 @@ Every case study in this repository adheres to strict international engineering 
 
 ## 👨‍💻 Author & Contact
 
-* **Lead Analyst**: Adekunle Ola
+* **Lead Analyst**: Adekunle Olanrewaju
 * **GitHub Profile**: [@Adekunle-sec](https://github.com/Adekunle-sec)
 * **LinkedIn**: [adekunle-olanrewaju-20261844b](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b)
 * **Email**: [contact@anlogix.com](mailto:contact@anlogix.com)
