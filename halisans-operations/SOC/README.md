@@ -1,8 +1,8 @@
-# [YOUR NAME] | Security Operations Center (SOC) Analyst
+# Adekunle Olanrewaju | Security Operations Center (SOC) Analyst
 
 **Microsoft Sentinel | Microsoft Defender | Detection & Incident Response**
 
-📍 [Location] · [LinkedIn URL] · [Professional Email] · [Resume URL]
+📍 Lagos, Nigeria · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b · contact@anlogix.com · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
 
 ## Professional profile
 
@@ -12,9 +12,9 @@ I am a **Security Operations Center (SOC) Analyst** developing practical experti
 
 ## Practical experience | Halisans Technologies
 
-**Role:** [Actual role / mentee pathway]  
-**Period:** [Month YYYY – Present / End date]  
-**Environment:** [Training lab / supervised internal operations / production, as applicable]
+**Role:** Security Operations Center (SOC) Analyst  
+**Period:** 2026 – Present  
+**Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs
 
 **Selected responsibilities (retain only those personally completed):**
 
@@ -63,9 +63,9 @@ Every featured case study includes a scenario, scope and authorization, my indiv
 
 ## Contact
 
-- **LinkedIn:** [URL]
-- **Email:** [Professional email]
-- **GitHub:** [Profile URL]
+- **LinkedIn:** https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
+- **Email:** contact@anlogix.com
+- **GitHub:** https://github.com/Adekunle-sec
 
 ---
 *All cases are labeled as simulated, supervised, or operational as appropriate. All outcomes are evidence-backed.*

@@ -11,7 +11,7 @@ I am a **Cybersecurity Analyst \| Threat Intelligence & Security Analysis** deve
 
 > **Customize before publishing:** Replace all bracketed placeholders. Only claim tools, responsibilities, years of experience, and outcomes you can verify. State your actual relationship with Halisans Technologies (employee, intern, trainee, or mentee) and dates accurately.
 
-## Practical experience \| Halisans Technologies
+# Adekunle Olanrewaju | Cybersecurity Analyst | Threat Intelligence & Security Analysis
 
 **Role:** \[Actual role / mentee pathway\]  
 **Period:** \[Month YYYY – Present / End date\]  

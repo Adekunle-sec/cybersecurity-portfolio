@@ -1,4 +1,4 @@
-# \[YOUR NAME\] \| Governance, Risk & Compliance (GRC) Analyst
+# Adekunle Olanrewaju | Governance, Risk & Compliance (GRC) Analyst
 
 **Risk Assessment \| ISO 27001 \| Control Testing \| Audit Readiness**
 
