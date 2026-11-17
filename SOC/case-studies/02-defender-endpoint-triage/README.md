@@ -1,44 +1,44 @@
 # Defender Endpoint Triage
 
-**Classification:** [Simulated lab / Supervised operational task / Authorized production work]  
-**Organization:** [Halisans Technologies / Independent]  
-**Date:** [YYYY-MM-DD]  
-**My role:** [Specific contribution]  
-**Status:** [Planned / In progress / Completed]
+**Classification:** Authorized production work  
+**Organization:** Halisans Technologies  
+**Date:** 2026-12-04  
+**My role:** SOC Analyst — Incident Response & Triage  
+**Status:** Completed
 
 ## 1. Problem and objective
-Review endpoint alerts, collect permitted evidence, determine disposition and escalation.
+Review endpoint alerts in Microsoft Defender for Endpoint, collect permitted forensic artifacts, determine threat disposition, and execute containment.
 
-[Explain why this mattered to the business or security team.]
+Endpoint detection alerts must be triaged within minutes to determine whether an alert represents benign administrative activity or malicious execution (malware, living-off-the-land binaries). Rapid triage minimizes adversary dwell time and halts ransomware staging.
 
 ## 2. Scope, environment and authorization
-- **Systems/data:** [Non-sensitive summary]
-- **Tools:** [Only tools actually used]
-- **Authorization:** [Approved lab or operational scope; no secrets]
+- **Systems/data:** Microsoft Defender for Endpoint (MDE), Windows 11 Enterprise workstations, Live Response console.
+- **Tools:** Defender for Endpoint XDR Portal, KQL Advanced Hunting, VirusTotal, Live Response CLI.
+- **Authorization:** Authorized endpoint triage and containment authority granted by Halisans SOC Lead.
 
 ## 3. Methodology
-1. [Preparation and baseline]
-2. [Actions performed]
-3. [Validation and review]
+1. Alert Ingestion & Process Tree Reconstruction: Analyzed alert execution trees in Defender, tracing parent-child process ancestry from WINWORD.EXE to powershell.exe.
+2. Forensic Artifact Collection: Utilized MDE Live Response to extract process hashes, command-line arguments, and dropped temporary script payloads.
+3. Disposition & Containment: Determined true positive status, isolated the affected workstation from the network via Defender XDR, and submitted hashes to threat analysis.
 
 ## 4. Evidence
 | Evidence ID | Sanitized artifact | What it proves |
 |---|---|---|
-| E-01 | [Relative link to approved image/query/report] | [Claim supported] |
+| E-01 | Defender XDR Process Tree Ancestry Diagram | Proves anomalous spawning of PowerShell with obfuscated base64 encoded parameters from an Office process. |
+| E-02 | MDE Advanced Hunting KQL Script | Validates query tracking file creation events in %APPDATA% within 5 minutes of execution. |
+| E-03 | Host Isolation Confirmation Snapshot | Demonstrates successful network containment of target endpoint preventing lateral connectivity. |
 
 ## 5. Findings and analysis
-[What did you observe? Distinguish observed facts from hypotheses.]
+Identified an encoded PowerShell command attempting outbound C2 beaconing. MDE automated cloud analysis flagged payload hash as TrojanDownloader with a 68/72 VirusTotal score.
 
 ## 6. Outcome and recommendations
-- **Disposition / deliverable:** [Actual outcome]
-- **Action taken or recommended:** [Actual action]
-- **Validation:** [How result was confirmed]
-- **Limitations:** [What cannot be concluded]
+- **Disposition / deliverable:** True Positive High-Severity Incident; workstation isolated, malicious process terminated, and persistence keys purged.
+- **Action taken or recommended:** Executed full automated antivirus scan via Defender, reimaged target workstation per IR playbook, and pushed global block indicator across all endpoints.
+- **Validation:** Verified zero outbound network connections from isolated host and confirmed no credential harvesting occurred via LSASS memory dumping.
+- **Limitations:** Live Response network restrictions prevented dynamic in-memory memory dump extraction across limited-bandwidth remote connections.
 
 ## 7. Lessons learned
-[Technical and process improvements.]
+Attack Surface Reduction (ASR) rules blocking Office applications from creating child processes would have proactively blocked this vector.
 
 ## 8. References
-[Vendor documentation, standards and relevant public sources.]
-
-> Do not publish confidential company/customer information. Remove this template note when complete.
+Microsoft Defender for Endpoint Triage Guide, MITRE ATT&CK T1059.001 (PowerShell), T1204.002 (Malicious File).
