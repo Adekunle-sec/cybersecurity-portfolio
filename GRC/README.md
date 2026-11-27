@@ -31,7 +31,7 @@ I am a **Governance, Risk & Compliance (GRC) Analyst** with practical expertise 
 
 ## 🚀 Associated Monorepo Project: Threat Modeling & Risk Register
 
-As part of this unified monorepo, explore our full SaaS risk assessment in [`../threat-modeling-risk-assessment-saas/`](../threat-modeling-risk-assessment-saas/):
+As part of this unified monorepo, explore our full SaaS risk assessment in [`../SOC/threat-modeling-risk-assessment-saas/`](../SOC/threat-modeling-risk-assessment-saas/):
 - **1,000-Row Threat Risk Register (`Threat_Risk_Register.xlsx`):** Quantitative STRIDE risk assessment with CVSS v3.1 calculations.
 - **Risk Treatment Plan (`Risk_Treatment_Plan.xlsx`):** Ownership assignments, mitigation actions, and residual risk tracking.
 - **Control Mapping Matrix (`Control_Mapping_Matrix.xlsx`):** Cross-mapped to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5.

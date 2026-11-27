@@ -28,27 +28,27 @@ cybersecurity-portfolio/
 ├── .gitignore
 ├── README.md
 ├── cybersecurity-banner.svg
-├── SOC/                                      # Security Operations Center, SIEM/XDR & CTI
-│   ├── README.md
-│   ├── case-studies/                         # Alert triage, endpoint investigation & KQL
-│   ├── labs/                                 # Hands-on Sentinel, Defender & SOAR labs
-│   └── threat-intelligence-and-detection/    # CTI pulses, IOC hunting & MITRE mapping
-├── IAM/                                      # Identity & Access Management & Governance
-│   ├── README.md
-│   ├── case-studies/                         # JML lifecycle, RBAC matrix & access reviews
-│   └── labs/                                 # RBAC entitlement matrix lab
 ├── GRC/                                      # Governance, Risk & Compliance & Audit
 │   ├── README.md
 │   ├── case-studies/                         # Risk assessment, ISO 27001 & audit tracking
 │   └── labs/                                 # ISO 27001 audit register lab
-└── threat-modeling-risk-assessment-saas/     # STRIDE Threat Modeling & SaaS Risk Register
+├── IAM/                                      # Identity & Access Management & Governance
+│   ├── README.md
+│   ├── case-studies/                         # JML lifecycle, RBAC matrix & access reviews
+│   └── labs/                                 # RBAC entitlement matrix lab
+└── SOC/                                      # Security Operations Center, SIEM/XDR & CTI
     ├── README.md
-    ├── DFD.png                               # High-res OWASP Level-1 Data Flow Diagram
-    ├── Threat_Risk_Register.xlsx             # 1,000-row STRIDE risk calculation register
-    ├── Risk_Treatment_Plan.xlsx              # Remediation ownership and mitigation roadmap
-    ├── Control_Mapping_Matrix.xlsx           # Cross-mapped to ISO 27001 & NIST SP 800-53
-    ├── OWASP_Threat_Dragon_Report.pdf        # 24-page threat model executive report
-    └── Threat_Modelling_Model.json           # Native Threat Dragon model file
+    ├── threat-modeling-risk-assessment-saas/ # STRIDE Threat Modeling & SaaS Risk Register
+    │   ├── README.md
+    │   ├── DFD.png                           # High-res OWASP Level-1 Data Flow Diagram
+    │   ├── Threat_Risk_Register.xlsx         # 1,000-row STRIDE risk calculation register
+    │   ├── Risk_Treatment_Plan.xlsx          # Remediation ownership and mitigation roadmap
+    │   ├── Control_Mapping_Matrix.xlsx       # Cross-mapped to ISO 27001 & NIST SP 800-53
+    │   ├── OWASP_Threat_Dragon_Report.pdf    # 24-page threat model executive report
+    │   └── Threat_Modelling_Model.json       # Native Threat Dragon model file
+    ├── threat-intelligence-and-detection/    # CTI pulses, IOC hunting & MITRE mapping
+    ├── case-studies/                         # Alert triage, endpoint investigation & KQL
+    └── labs/                                 # Hands-on Sentinel, Defender & SOAR labs
 ```
 
 ---
@@ -144,7 +144,7 @@ cybersecurity-portfolio/
 ---
 
 ### 4. 🚀 Threat Modeling & Risk Assessment for a SaaS Product
-**Primary Directory:** [`./threat-modeling-risk-assessment-saas/`](./threat-modeling-risk-assessment-saas/)  
+**Primary Directory:** [`./SOC/threat-modeling-risk-assessment-saas/`](./SOC/threat-modeling-risk-assessment-saas/)  
 **Role:** Threat Modeling & Risk Specialist  
 **Core Toolset:** OWASP Threat Dragon, STRIDE Framework, CVSS v3.1, Microsoft Excel, ISO 27001:2022, NIST SP 800-53 Rev 5
 
@@ -152,12 +152,12 @@ cybersecurity-portfolio/
 - **System Scope:** Multi-tenant enterprise SaaS Academic Portal deployed on Azure App Services with Azure AD authentication, Redis caching, and PostgreSQL backend.
 - **STRIDE Threat Decomposition:** Comprehensive analysis across Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
 - **Primary Deliverables:**
-  - **Level-1 Data Flow Diagram (DFD):** [`DFD.png`](./threat-modeling-risk-assessment-saas/DFD.png) visual model illustrating trust boundaries and data flows.
-  - **1,000-Row Threat Risk Register:** [`Threat_Risk_Register.xlsx`](./threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) with calculated CVSS v3.1 scores, likelihood, and business impact.
-  - **Risk Treatment Plan:** [`Risk_Treatment_Plan.xlsx`](./threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) detailing designated owners, mitigations, and residual risk.
-  - **Control Mapping Matrix:** [`Control_Mapping_Matrix.xlsx`](./threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) mapping threats directly to ISO 27001:2022 and NIST SP 800-53 Rev 5.
-  - **24-Page Threat Model Report:** [`OWASP_Threat_Dragon_Report.pdf`](./threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) and raw [`Threat_Modelling_Model.json`](./threat-modeling-risk-assessment-saas/Threat_Modelling_Model.json).
-- 👉 **[Explore Full Threat Modeling Module →](./threat-modeling-risk-assessment-saas/)**
+  - **Level-1 Data Flow Diagram (DFD):** [`DFD.png`](./SOC/threat-modeling-risk-assessment-saas/DFD.png) visual model illustrating trust boundaries and data flows.
+  - **1,000-Row Threat Risk Register:** [`Threat_Risk_Register.xlsx`](./SOC/threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) with calculated CVSS v3.1 scores, likelihood, and business impact.
+  - **Risk Treatment Plan:** [`Risk_Treatment_Plan.xlsx`](./SOC/threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) detailing designated owners, mitigations, and residual risk.
+  - **Control Mapping Matrix:** [`Control_Mapping_Matrix.xlsx`](./SOC/threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) mapping threats directly to ISO 27001:2022 and NIST SP 800-53 Rev 5.
+  - **24-Page Threat Model Report:** [`OWASP_Threat_Dragon_Report.pdf`](./SOC/threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) and raw [`Threat_Modelling_Model.json`](./SOC/threat-modeling-risk-assessment-saas/Threat_Modelling_Model.json).
+- 👉 **[Explore Full Threat Modeling Module →](./SOC/threat-modeling-risk-assessment-saas/)**
 
 ---
 

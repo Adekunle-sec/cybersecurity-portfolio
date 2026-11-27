@@ -41,15 +41,15 @@ I am a **Security Operations Center (SOC) Analyst** with hands-on technical prof
 
 ## 🚀 Flagship Project: Threat Modeling & Risk Assessment for a SaaS Product
 
-As part of our cybersecurity monorepo, the comprehensive Threat Modeling and Risk Assessment module is located in [`../threat-modeling-risk-assessment-saas/`](../threat-modeling-risk-assessment-saas/):
+Located in **[`./threat-modeling-risk-assessment-saas/`](./threat-modeling-risk-assessment-saas/)**:
 
 | Deliverable | Description | File Link |
 |---|---|---|
-| **Level-1 Data Flow Diagram (DFD)** | Visual architectural model of the SaaS Academic Portal showing trust boundaries, processes, data stores, and external entities. | [View DFD (`DFD.png`)](../threat-modeling-risk-assessment-saas/DFD.png) |
-| **1,000-Row Threat Risk Register** | Quantitative and qualitative STRIDE risk register calculating CVSS v3.1 base scores, likelihood, and business impact. | [Download Register (`Threat_Risk_Register.xlsx`)](../threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) |
-| **Risk Treatment Plan** | Actionable mitigation matrix detailing risk acceptance, avoidance, mitigation, designated owners, and residual risk. | [Download Plan (`Risk_Treatment_Plan.xlsx`)](../threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) |
-| **Control Mapping Matrix** | Comprehensive cross-mapping of identified threats to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5 controls. | [Download Matrix (`Control_Mapping_Matrix.xlsx`)](../threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) |
-| **OWASP Threat Dragon Report** | 24-page formal threat assessment report summarizing architectural weaknesses and mitigation roadmaps. | [View Report (`OWASP_Threat_Dragon_Report.pdf`)](../threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) |
+| **Level-1 Data Flow Diagram (DFD)** | Visual architectural model of the SaaS Academic Portal showing trust boundaries, processes, data stores, and external entities. | [View DFD (`DFD.png`)](./threat-modeling-risk-assessment-saas/DFD.png) |
+| **1,000-Row Threat Risk Register** | Quantitative and qualitative STRIDE risk register calculating CVSS v3.1 base scores, likelihood, and business impact. | [Download Register (`Threat_Risk_Register.xlsx`)](./threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) |
+| **Risk Treatment Plan** | Actionable mitigation matrix detailing risk acceptance, avoidance, mitigation, designated owners, and residual risk. | [Download Plan (`Risk_Treatment_Plan.xlsx`)](./threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) |
+| **Control Mapping Matrix** | Comprehensive cross-mapping of identified threats to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5 controls. | [Download Matrix (`Control_Mapping_Matrix.xlsx`)](./threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) |
+| **OWASP Threat Dragon Report** | 24-page formal threat assessment report summarizing architectural weaknesses and mitigation roadmaps. | [View Report (`OWASP_Threat_Dragon_Report.pdf`)](./threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) |
 
 ---
 
