@@ -89,9 +89,18 @@ The architecture was evaluated against the **STRIDE** methodology (Spoofing, Tam
 From `Threat_Risk_Register.xlsx`, all identified risks were quantified using 5x5 Likelihood and Impact matrices and standard CVSS 3.1 scoring formulas:
 
 ```text
-Inherent Risk Score = Likelihood (1–5) × Impact (1–5)
+Inherent Risk Score = Likelihood (1–5) × Impact (1–5) [Converted from CVSS v3.1 10-scale by ÷ 2]
 Target Residual Risk Score = Target Likelihood × Target Impact (Post-Mitigation)
 ```
+
+### Risk Prioritization & Remediation SLAs (ISO 27001 Annex A8.8 Alignment):
+- **25-Scale Matrix:** Critical (16–25) | High (11–15) | Medium (6–10) | Low (1–5)
+- **Remediation SLA Targets:**
+  - **Critical (CVSS 9.0–10.0):** Immediate containment and patch deployment (< 24–48 hours, e.g. RCE, Auth Bypass)
+  - **High (CVSS 7.0–8.9):** Remediation required within 7 days
+  - **Medium (CVSS 4.0–6.9):** Remediation required within 30 days (e.g. Stored/Reflected XSS)
+  - **Low (CVSS < 4.0):** Remediation scheduled within 90 days (e.g. Minor Information Disclosure)
+- **Four Core Risk Treatment Pathways:** Risk Mitigation, Risk Acceptance, Risk Transference, Risk Avoidance.
 
 | Risk ID | Threat Classification | Inherent Likelihood | Inherent Impact | Inherent Score | Priority | Treatment Strategy | Target Residual Score |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|

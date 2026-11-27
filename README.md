@@ -173,6 +173,10 @@ cybersecurity-portfolio/
 - **Threat Actor Profiling & TTP Mapping:**
   - Tracked threat actor groups: **APT29 (Cozy Bear), Lazarus Group, LockBit 3.0, Wizard Spider**.
   - Mapped observed behaviors against MITRE techniques: `T1190` (Exploit Public-Facing Application) and `T1566` (Phishing).
+- **Phishing Simulation & Awareness (ISO 27001 Annex A6.3):**
+  - Designed staff phishing simulations and awareness campaigns inspecting domains, subdomains, and email authentication (SPF, DKIM, DMARC) to build a human firewall against social engineering.
+- **Risk-Based Vulnerability Management (ISO 27001 Annex A8.8):**
+  - 4-stage vulnerability lifecycle: Asset Identification → Vulnerability Assessment → Exploitability-Based Prioritization (focusing on active in-the-wild exploitation rather than raw CVSS base severity) → Remediation & Verification Rescan.
 - **Detection Engineering & Custom Hash Blocking:**
   - Querying global intelligence via Defender Intel Explorer.
   - Deploying custom block rules: `Defender -> Settings -> Endpoints -> Indicators -> File hashes -> Add indicator -> Action: Block execution`.
