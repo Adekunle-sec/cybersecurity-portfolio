@@ -42,12 +42,26 @@ I am a **Governance, Risk & Compliance (GRC) Analyst** with practical expertise 
 
 ---
 
-## 🚀 Associated Monorepo Project: Threat Modeling & Risk Register
+## 🚀 Architectural Project Contribution: Student Login Portal Risk Assessment & Governance
 
-As part of this unified monorepo, explore our full SaaS risk assessment in [`../SOC/threat-modeling-risk-assessment-saas/`](../SOC/threat-modeling-risk-assessment-saas/):
-- **1,000-Row Threat Risk Register (`Threat_Risk_Register.xlsx`):** Quantitative STRIDE risk assessment with CVSS v3.1 calculations.
-- **Risk Treatment Plan (`Risk_Treatment_Plan.xlsx`):** Ownership assignments, mitigation actions, and residual risk tracking.
-- **Control Mapping Matrix (`Control_Mapping_Matrix.xlsx`):** Cross-mapped to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5.
+As part of the [Student Login Portal Threat Modeling & Risk Assessment](../SOC/threat-modeling-risk-assessment-saas/), GRC led the **Quantitative Risk Modeling**, **Regulatory Compliance Cross-Mapping**, and **Remediation SLA Governance**:
+
+### Key GRC Engineering Contributions:
+- **Quantitative Risk Scoring (`Threat_Risk_Register.xlsx`):** Converted CVSS v3.1 base metrics into a 5×5 Likelihood & Impact matrix to compute Inherent Risk ($\text{Likelihood} \times \text{Impact}$) on a 25-scale prioritization: Critical (16–25), High (11–15), Medium (6–10), and Low (1–5).
+- **ISO 27001 & NIST Compliance Mapping (`Control_Mapping_Matrix.xlsx`):** Systematically mapped STRIDE threat mitigations against:
+  - *ISO/IEC 27001:2022 Annex A Controls:* A.5.10 (Acceptable Use), A.5.14 (Information Transfer), A.5.15 (Access Control), A.5.18 (Access Rights), A.5.28 (Evidence Collection), A.8.2 (Privileged Access), A.8.5 (Authentication), A.8.8 (Vulnerability Management), A.8.12 (Data Leakage), A.8.15 & A.8.16 (Logging & Monitoring), A.8.24 (Cryptography), A.8.26 (Application Security).
+  - *NIST SP 800-53 Rev 5:* IA-2, AC-2, AC-3, AC-6, AU-2, AU-3, AU-12, SC-5, SC-8, SC-28, SI-10.
+- **Risk Treatment Roadmap & Remediation SLAs (`Risk_Treatment_Plan.xlsx`):** Formulated an actionable treatment plan with assigned organizational owners (Backend Dev, Infrastructure, Identity Admin), target residual risk scores, and remediation timelines aligned with ISO 27001 Annex A8.8:
+  - *Critical (CVSS 9.0–10.0):* Immediate remediation (< 24–48 hours)
+  - *High (CVSS 7.0–8.9):* Remediation within 7 days
+  - *Medium (CVSS 4.0–6.9):* Remediation within 30 days
+  - *Low (CVSS < 4.0):* Remediation within 90 days
+
+| GRC Deliverable | Governance Scope & Standards | Direct Link |
+|---|---|---|
+| **1,000-Row Threat Risk Register** | Quantitative STRIDE risk assessment with CVSS v3.1 calculations and 25-scale prioritization. | [Download Register (`Threat_Risk_Register.xlsx`)](../SOC/threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) |
+| **Risk Treatment Plan** | Actionable mitigation matrix detailing risk owners, remediation strategies, and residual risk targets. | [Download Plan (`Risk_Treatment_Plan.xlsx`)](../SOC/threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) |
+| **Control Mapping Matrix** | Comprehensive cross-mapping to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5 controls. | [Download Matrix (`Control_Mapping_Matrix.xlsx`)](../SOC/threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) |
 
 ---
 

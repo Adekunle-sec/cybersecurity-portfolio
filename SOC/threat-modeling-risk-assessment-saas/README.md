@@ -59,6 +59,18 @@ The security assessment utilizes **OWASP Threat Dragon v2.6.2** to formulate an 
 
 ---
 
+## 🤝 Cross-Functional Architecture & Domain Ownership
+
+In alignment with enterprise security operations at Halisans Technologies, this engagement coordinates across three primary defense pillars:
+
+| Security Pillar | Domain Ownership & Core Contributions | Pillar Landing Page |
+|:---|:---|:---:|
+| **🔑 Identity & Access Management (IAM)** | **Anti-Spoofing & Authorization Defense:**<br>• Enforced MFA and Argon2id password hashing controls (`NST01`)<br>• Designed cryptographically validated JWT session claims preventing IDOR / BOLA<br>• Enforced server-side RBAC for student academic profile viewing (`NST38`) | [Explore IAM Pillar →](../../IAM/README.md) |
+| **🛡️ Security Operations Center (SOC)** | **Architecture Modeling, Anti-Repudiation & Telemetry:**<br>• Translated developer brief into the Level-1 Data Flow Diagram (DFD)<br>• Structured immutable audit logging and SIEM ingestion to prevent activity denial (`NST29`)<br>• Configured WAF rate-limiting telemetry & SIEM threshold alert rules for login flooding (`NST17`) | [Explore SOC Pillar →](../README.md) |
+| **📋 Governance, Risk & Compliance (GRC)** | **Risk Quantification, Regulatory Mapping & SLAs:**<br>• Converted CVSS 3.1 scores into a 5×5 / 25-scale Inherent Risk Matrix<br>• Mapped technical mitigations to **ISO/IEC 27001:2022 Annex A** & **NIST SP 800-53 Rev 5**<br>• Authored the Risk Treatment Plan with designated owners and remediation SLAs | [Explore GRC Pillar →](../../GRC/README.md) |
+
+---
+
 ## 🏗️ System Architecture & Data Flow Diagram (DFD)
 
 ### 🖼️ Level-1 Data Flow Diagram (DFD)

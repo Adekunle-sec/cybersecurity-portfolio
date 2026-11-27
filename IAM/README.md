@@ -54,7 +54,23 @@ Beyond operational experience, I have independently developed technical projects
 
 ---
 
-## 📂 Featured Case Studies
+## 🚀 Architectural Project Contribution: Student Login Portal Security Assessment
+
+As part of the [Student Login Portal Threat Modeling & Risk Assessment](../SOC/threat-modeling-risk-assessment-saas/), IAM designed the **Identity Trust Perimeters**, **Authentication Mechanisms**, and **Access Authorization Controls** protecting against STRIDE Spoofing (`NST01`) and Elevation of Privilege (`NST38`):
+
+### Key IAM Engineering Contributions:
+- **Anti-Spoofing & Credential Protection (`NST01`):** Mandated Multi-Factor Authentication (MFA) via TOTP / WebAuthn, enforced sliding-window rate limiting on `/login`, and implemented salted **Argon2id** password hashing ($m=65536, t=3, p=4$) to mitigate credential stuffing.
+- **Anti-Privilege Escalation & Authorization (`NST38`):** Engineered server-side Role-Based Access Control (RBAC) where profile access permissions are derived strictly from cryptographically validated JWT session claims, preventing Insecure Direct Object References (IDOR/BOLA).
+- **Session Security & Boundary Isolation:** Structured ephemeral session token minting stored exclusively in `HttpOnly`, `Secure`, `SameSite=Strict` cookies, preventing cross-site scripting (XSS) token exfiltration.
+- **Regulatory Control Mapping:** Aligned identity defenses to **ISO/IEC 27001:2022 Controls A.5.15 (Access Control), A.5.18 (Access Rights), and A.8.5 (Secure Authentication)**, and **NIST SP 800-53 IA-2 (Identification & Authentication) / AC-6 (Least Privilege)**.
+
+| IAM Deliverable | Focus & Description | Direct Link |
+|---|---|---|
+| **Identity Architecture in DFD** | Level-1 Data Flow Diagram illustrating Student Entity, Registration, Login, and Profile trust perimeters. | [View DFD (`DFD.png`)](../SOC/threat-modeling-risk-assessment-saas/DFD.png) |
+| **Control Mapping Matrix (IAM Controls)** | Verification matrix mapping identity mitigations against ISO 27001:2022 and NIST SP 800-53 standards. | [Download Matrix (`Control_Mapping_Matrix.xlsx`)](../SOC/threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) |
+| **Full Threat Model Report** | Comprehensive 24-page technical assessment report generated via OWASP Threat Dragon v2.6.2. | [View Report (`OWASP_Threat_Dragon_Report.pdf`)](../SOC/threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) |
+
+---
 
 | Case Study | Objective & Scope | Key Artifacts |
 |---|---|---|

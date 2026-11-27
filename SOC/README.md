@@ -56,6 +56,12 @@ I am a **Security Operations Center (SOC) Analyst** with hands-on technical prof
 
 Located in **[`./threat-modeling-risk-assessment-saas/`](./threat-modeling-risk-assessment-saas/)**:
 
+As part of this assessment, SOC and Security Engineering led the **Data Flow Diagram (DFD) Modeling**, **STRIDE Threat Decomposition**, and **Security Telemetry/Logging Architectures**:
+- **Architecture & Trust Boundary Modeling:** Developed the Level-1 DFD in OWASP Threat Dragon v2.6.2 mapping the Student Browser, 3 Core Application Processes (Registration, Login, Profile Viewing), and the isolated Student Database.
+- **Anti-Repudiation Architecture (`NST29`):** Specified immutable audit logging controls forwarding authentication telemetry to Microsoft Sentinel, guaranteeing non-repudiation of user actions (aligned to **ISO 27001 Controls A.8.15 & A.8.16** and **NIST AU-2 / AU-12**).
+- **Anti-Denial of Service (`NST17`):** Configured Cloudflare / AWS WAF Layer 7 DDoS mitigation and SIEM threshold correlation rules to detect volumetric login floods targeting Argon2id hashing routines.
+- **Formal Threat Assessment Report:** Produced the complete 24-page native assessment report summarizing attack surfaces and technical remediations.
+
 | Deliverable | Description | File Link |
 |---|---|---|
 | **Level-1 Data Flow Diagram (DFD)** | Visual architectural model of the Student Login Portal showing trust boundaries, 3 core processes, data stores, and external student entity. | [View DFD (`DFD.png`)](./threat-modeling-risk-assessment-saas/DFD.png) |
