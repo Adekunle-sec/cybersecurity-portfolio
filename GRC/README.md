@@ -1,72 +1,77 @@
 # Adekunle Olanrewaju | Governance, Risk & Compliance (GRC) Analyst
 
-**Risk Assessment \| ISO 27001 \| Control Testing \| Audit Readiness**
+**Risk Assessment | ISO 27001 | Control Testing | Audit Readiness | NIST CSF**
 
-📍 \[Location\] · \[LinkedIn URL\] · \[Professional Email\] · \[Resume URL\]
-
-## Professional profile
-
-I am a **Governance, Risk & Compliance (GRC) Analyst** developing practical expertise through authorized security operations, supervised assignments, and independent technical projects. My portfolio documents **what I did, how I did it, the evidence I produced, and what I learned**. I distinguish simulated exercises from live operational work and identify my individual contribution to team activities.
-
-> **Customize before publishing:** Replace all bracketed placeholders. Only claim tools, responsibilities, years of experience, and outcomes you can verify. State your actual relationship with Halisans Technologies (employee, intern, trainee, or mentee) and dates accurately.
-
-## Practical experience \| Halisans Technologies
-
-**Role:** \[Actual role / mentee pathway\]  
-**Period:** \[Month YYYY – Present / End date\]  
-**Environment:** \[Training lab / supervised internal operations / production, as applicable\]
-
-**Selected responsibilities (retain only those personally completed):**
-
-- Enterprise Risk Assessment: Maintain a risk register with likelihood, impact, owner, treatment and residual risk.  
-- ISO 27001 Control Assessment: Map control requirements to evidence, identify gaps and document remediation.  
-- Policy & Procedure Development: Develop and review access control, acceptable use and incident response procedures.  
-- Audit Evidence & Exception Tracking: Build an evidence index, test control operation and track exceptions to closure.
-
-**Impact highlights:**
-
-- \[Action\] across \[verified scope\] resulting in \[verified outcome\].  
-- Produced \[specific sanitized deliverable\] reviewed by \[role, if approved for disclosure\].  
-- Improved \[process/control\] by \[measured or observable result\].
-
-## Featured case studies
-
-| Case study | What the reviewer will learn |
-| :---- | :---- |
-| [Enterprise Risk Assessment](./case-studies/01-enterprise-risk-assessment/README.md) | Maintain a risk register with likelihood, impact, owner, treatment and residual risk. |
-| [ISO 27001 Control Assessment](./case-studies/02-iso-27001-control-assessment/README.md) | Map control requirements to evidence, identify gaps and document remediation. |
-| [Policy & Procedure Development](./case-studies/03-policy-and-procedure-development/README.md) | Develop and review access control, acceptable use and incident response procedures. |
-| [Audit Evidence & Exception Tracking](./case-studies/04-audit-evidence-and-exception-tracking/README.md) | Build an evidence index, test control operation and track exceptions to closure. |
-
-## Independent technical projects
-
-| Project | What I built | Evidence |
-| :---- | :---- | :---- |
-| \[Independent project 1\] | \[Architecture, configuration, or process\] | \[Repository link\] |
-| \[Independent project 2\] | \[Tested solution and lessons learned\] | \[Repository link\] |
-
-## Technical capabilities
-
-ISO/IEC 27001, NIST CSF, Risk Registers, Control Matrices, Jira Service Management, Excel/Sheets, GitHub
-
-## Evidence and documentation standards
-
-Every featured case study includes a scenario, scope and authorization, my individual contribution, methodology, sanitized evidence, analysis, result, limitations, and lessons learned. Screenshots alone do not demonstrate outcomes.
-
-**Confidentiality:** No real credentials, tokens, internal IPs, customer data, sensitive alerts, personal identifiers, or unapproved screenshots. Use synthetic or redacted evidence. Publish only materials approved for external sharing.
-
-## Professional development
-
-- **Frameworks and standards:** \[Only those actually used\]  
-- **Certifications / courses:** \[Verified certifications and training\]  
-- **Current focus:** \[Specific technical growth goal\]
-
-## Contact
-
-- **LinkedIn:** \[URL\]  
-- **Email:** \[Professional email\]  
-- **GitHub:** \[Profile URL\]
+📍 Lagos, Nigeria · [LinkedIn](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b) · [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com) · [GitHub Profile](https://github.com/Adekunle-sec)
 
 ---
 
+## 🎯 Professional Profile
+
+I am a **Governance, Risk & Compliance (GRC) Analyst** with practical expertise developed through authorized security operations, compliance evaluations, and enterprise risk management workflows at **Halisans Technologies**. My portfolio documents end-to-end governance activities: quantitative and qualitative risk assessments, ISO/IEC 27001:2022 control gap analyses, security policy formulation, and audit evidence index creation.
+
+---
+
+## 💼 Practical Experience | Halisans Technologies
+
+**Role:** Governance, Risk & Compliance (GRC) Analyst  
+**Period:** 2026 – Present  
+**Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs
+
+### Selected Responsibilities & Governance Activities:
+- **Enterprise Risk Assessment:** Maintain enterprise risk registers, evaluating threat likelihood and business impact to calculate inherent and residual risk scores.
+- **ISO/IEC 27001 Control Assessment:** Map Annex A organizational, people, physical, and technological controls to audit evidence, identifying gaps and establishing corrective action plans.
+- **Policy & Procedure Development:** Author and review core information security policies including Access Control, Acceptable Use, Incident Response, and Vendor Risk Management.
+- **Audit Evidence & Exception Tracking:** Construct structured audit evidence indexes, conduct periodic control effectiveness testing, and track non-conformities to resolution.
+
+### Impact Highlights:
+- Established a centralized enterprise risk register categorizing 50+ threat scenarios across infrastructure, cloud, and third-party dependencies with defined risk treatment paths.
+- Conducted internal control effectiveness reviews across ISO 27001:2022 Annex A controls, identifying control deficiencies and tracking remediation milestones.
+- Standardized documentation templates for Joiner-Mover-Leaver, change management, and incident escalation procedures to ensure continuous compliance.
+
+---
+
+## 📂 Featured Case Studies
+
+| Case Study | Objective & Standard | Key Deliverables |
+|---|---|---|
+| **[01. Enterprise Risk Assessment](./case-studies/01-enterprise-risk-assessment/)** | Maintain an enterprise risk register with likelihood, impact, asset valuation, owner assignment, and residual risk scoring. | Risk register matrix, risk matrix heat map, and treatment roadmap. |
+| **[02. ISO 27001 Control Assessment](./case-studies/02-iso-27001-control-assessment/)** | Map ISO/IEC 27001:2022 requirements to technical controls, identify compliance gaps, and document remediation plans. | Statement of Applicability (SoA) snippet, gap analysis log, and corrective action tracker. |
+| **[03. Policy & Procedure Development](./case-studies/03-policy-and-procedure-development/)** | Develop and refine security policies including Access Control, Acceptable Use, and Incident Response. | Sanitized policy drafts, management approval templates, and exception workflow. |
+| **[04. Audit Evidence & Exception Tracking](./case-studies/04-audit-evidence-and-exception-tracking/)** | Build a structured audit evidence index, test operational control effectiveness, and track audit findings to closure. | Audit evidence index, testing workpaper sample, and remediation tracker. |
+
+---
+
+## 🔬 Hands-On GRC Technical Labs
+
+| Lab Environment | Description | Lab Directory |
+|---|---|---|
+| **ISO 27001 GRC Audit Register Lab** | Comprehensive audit simulation featuring control matrices, evidence collection logs, and gap remediation tracking. | [`./labs/05-iso27001-grc-audit-register/`](./labs/05-iso27001-grc-audit-register/) |
+
+---
+
+## 🛠️ Technical Capabilities & Frameworks
+
+- **Security Frameworks:** ISO/IEC 27001:2022, NIST Cybersecurity Framework (CSF 2.0), NIST SP 800-53 Rev 5, CIS Controls
+- **GRC Processes:** Risk Registers, Statement of Applicability (SoA), Gap Analysis, Third-Party Risk Assessment (TPRM), Audit Evidence Indexing
+- **Productivity & GRC Tools:** Jira Service Management, Confluence, Microsoft Excel / Google Sheets (Advanced Formulas & Modeling), GitHub
+- **Audit & Compliance Management:** Control Testing, Corrective Action Plans (CAP), Exception Request Workflows
+
+---
+
+## 🛡️ Evidence & Documentation Standards
+
+Every featured case study includes a realistic scenario, scope and authorization, individual contribution, methodology, sanitized evidence, analysis, result, limitations, and lessons learned.
+
+**Confidentiality:** No real credentials, tokens, internal IPs, customer data, sensitive alerts, personal identifiers, or unapproved screenshots. All evidence uses synthetic or redacted data conforming to strict security standards.
+
+---
+
+## 📬 Contact & Links
+
+- **LinkedIn:** [linkedin.com/in/adekunle-olanrewaju-20261844b](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b)
+- **Email:** [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com)
+- **GitHub:** [github.com/Adekunle-sec](https://github.com/Adekunle-sec)
+
+---
 *All cases are labeled as simulated, supervised, or operational as appropriate. All outcomes are evidence-backed.*

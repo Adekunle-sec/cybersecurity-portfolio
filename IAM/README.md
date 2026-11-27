@@ -2,78 +2,81 @@
 
 **Identity Governance | Active Directory | Microsoft Entra ID | RBAC**
 
-📍 Lagos, Nigeria · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b · tayour.ola@gmail.com · https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
+📍 Lagos, Nigeria · [LinkedIn](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b) · [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com) · [GitHub Profile](https://github.com/Adekunle-sec)
 
-## Professional profile
+---
+
+## 🎯 Professional Profile
 
 I am an **Identity & Access Management (IAM) Analyst** with hands-on experience working in cybersecurity operations at **Halisans Technologies**, where I have been involved in identity lifecycle management, user access provisioning, role-based access control (RBAC), Active Directory administration, access reviews, and security policy implementation.
 
 Through my work at Halisans Technologies, I have gained practical experience supporting **Joiner, Mover, and Leaver (JML) processes**, managing user identities and permissions, implementing access controls, and documenting IAM activities in alignment with organizational security policies and industry best practices.
 
-Beyond my professional experience, I have independently developed technical projects that demonstrate my ability to configure, secure, troubleshoot, and manage identity infrastructure.
+Beyond operational experience, I have independently developed technical projects and lab environments that demonstrate my ability to configure, secure, troubleshoot, and govern enterprise identity infrastructure.
 
-This GitHub portfolio showcases **my professional experience, technical implementations, documented security activities, and independent projects**, highlighting how I apply IAM principles to strengthen identity security, enforce least-privilege access, and support effective identity governance.
+---
 
-
-## work experience | Halisans Technologies
+## 💼 Practical Experience | Halisans Technologies
 
 **Role:** IAM Analyst  
 **Period:** 2026 – Present  
 **Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs
 
-**Responsibilities:**
+### Responsibilities:
+- **Joiner–Mover–Leaver Workflow:** Document authorized provisioning, role transitions, and deprovisioning with approval audit trails and ticket closure evidence.
+- **Quarterly Access Review:** Review entitlements across business units, flag privilege creep exceptions, record asset owner approvals, and track remediation.
+- **RBAC & Least Privilege:** Design and maintain entitlement matrices, validating security group assignments and separating administrative duties.
+- **Active Directory & Entra ID Administration:** Configure user accounts, organizational units (OUs), Group Policy Objects (GPOs), and Conditional Access policies.
 
-- Joiner–Mover–Leaver Workflow: Document authorized provisioning, changes and deprovisioning with approval and closure evidence.
-- Quarterly Access Review: Review entitlements, flag exceptions, record owner decisions and track remediation.
-- RBAC & Least Privilege: Design an entitlement matrix and validate group/role assignments.
-- AD and Entra ID Administration: Document identity configuration, GPOs and secure access controls.
-
-
-**Impact highlights:**
-- Implemented and tested identity and access management workflows within the HALISANS.COM Active Directory environment, covering user provisioning, role-based access control (RBAC), and Group Policy security configurations.
-
+### Impact Highlights:
+- Implemented and tested identity and access management workflows within the `HALISANS.COM` Active Directory environment, covering user provisioning, role-based access control (RBAC), and Group Policy security configurations.
 - Developed identity lifecycle documentation covering Joiner, Mover, and Leaver (JML) processes, including access requests, approval workflows, provisioning, and account deactivation procedures.
-
-- Configured and evaluated security group permissions for HLS-SOC and other organizational groups to support role-based access and least-privilege principles.
-
+- Configured and evaluated security group permissions for `HLS-SOC` and other organizational units to enforce role-based access and least-privilege principles.
 - Implemented access control documentation, RBAC entitlement matrices, and user access review records to support consistent identity governance and audit readiness.
 
-## Featured case studies
+---
 
-| Case study | What the reviewer will learn |
-|---|---|
-| [Joiner–Mover–Leaver Workflow](./case-studies/01-joiner-mover-leaver-workflow/README.md) | Documented authorized provisioning, changes and deprovisioning with approval and closure evidence. |
-| [Quarterly Access Review](./case-studies/02-quarterly-access-review/README.md) | Reviewed entitlements, flag exceptions, record owner decisions and track remediation. |
-| [RBAC & Least Privilege](./case-studies/03-rbac-and-least-privilege/README.md) | Implemented an entitlement matrix and validate group/role assignments. |
-| [AD and Entra ID Administration](./case-studies/04-ad-and-entra-id-administration/README.md) | Documented identity configuration, GPOs and secure access controls. |
+## 📂 Featured Case Studies
 
-## Independent technical projects
-
-| Project | What I built | Evidence |
+| Case Study | Objective & Scope | Key Artifacts |
 |---|---|---|
-| [Independent project 1] | [Architecture, configuration, or process] | [Repository link] |
-| [Independent project 2] | [Tested solution and lessons learned] | [Repository link] |
+| **[01. Joiner–Mover–Leaver Workflow](./case-studies/01-joiner-mover-leaver-workflow/)** | End-to-end lifecycle governance: automated provisioning, ticket verification, and same-day deprovisioning. | JML process maps, approval workflows, and deprovisioning audit records. |
+| **[02. Quarterly Access Review](./case-studies/02-quarterly-access-review/)** | Access certification campaign: reviewing high-privilege entitlements, identifying orphaned accounts, and revoking stale access. | Access review spreadsheet, exception tracker, and sign-off verification. |
+| **[03. RBAC & Least Privilege](./case-studies/03-rbac-and-least-privilege/)** | Role-Based Access Control matrix design: decoupling individual user permissions into standardized functional roles. | Role entitlement matrix, group membership audit, and least-privilege report. |
+| **[04. AD and Entra ID Administration](./case-studies/04-ad-and-entra-id-administration/)** | Hybrid identity administration: OU structure design, security GPOs, and Entra ID cloud access controls. | GPO hardening checklist, OU architecture diagram, and policy verification. |
 
-## Technical capabilities
+---
 
-Active Directory, Microsoft Entra ID, RBAC, PowerShell, Jira Service Management, Microsoft Defender
+## 🔬 Hands-On IAM Technical Labs
 
-## Evidence and documentation standards
+| Lab Environment | Description | Lab Directory |
+|---|---|---|
+| **IAM RBAC Entitlement Matrix Lab** | Design and implementation of an enterprise RBAC framework, testing SOD (Segregation of Duties) and privilege inheritance in Active Directory. | [`./labs/02-iam-rbac-entitlement-matrix/`](./labs/02-iam-rbac-entitlement-matrix/) |
 
-Every featured case study includes a scenario, scope and authorization, my individual contribution, methodology, sanitized evidence, analysis, result, limitations, and lessons learned. Screenshots alone do not demonstrate outcomes.
+---
 
-**Confidentiality:** No real credentials, tokens, internal IPs, customer data, sensitive alerts, personal identifiers, or unapproved screenshots. Use synthetic or redacted evidence. Publish only materials approved for external sharing.
+## 🛠️ Technical Capabilities
 
-## Professional development
+- **Directory Services:** Active Directory Domain Services (AD DS), Microsoft Entra ID (Azure AD), Azure AD Connect
+- **Access Governance:** Role-Based Access Control (RBAC), Least Privilege, Segregation of Duties (SOD), Access Certifications
+- **Administration & Scripting:** PowerShell (`ActiveDirectory` module), Group Policy Management Console (GPMC)
+- **ITSM & Audit:** Jira Service Management, ServiceNow Identity Workflows, Audit Evidence Repositories
 
-- **Frameworks and standards:** NIST CSF| ISO 27001
-- **Certifications / courses:** 
+---
 
-## Contact
+## 🛡️ Evidence & Documentation Standards
 
-- **LinkedIn:** https://www.linkedin.com/in/adekunle-olanrewaju-20261844b
-- **Email:** tayour.ola@gmail.com
-- **GitHub:** https://github.com/Adekunle-sec
+Every featured case study includes a realistic scenario, scope and authorization, individual contribution, methodology, sanitized evidence, analysis, result, limitations, and lessons learned.
+
+**Confidentiality:** No real credentials, tokens, internal IPs, customer data, sensitive alerts, personal identifiers, or unapproved screenshots. All evidence uses synthetic or redacted data conforming to strict security standards.
+
+---
+
+## 📬 Contact & Links
+
+- **LinkedIn:** [linkedin.com/in/adekunle-olanrewaju-20261844b](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b)
+- **Email:** [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com)
+- **GitHub:** [github.com/Adekunle-sec](https://github.com/Adekunle-sec)
 
 ---
 *All cases are labeled as simulated, supervised, or operational as appropriate. All outcomes are evidence-backed.*
