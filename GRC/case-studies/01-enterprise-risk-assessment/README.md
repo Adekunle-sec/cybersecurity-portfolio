@@ -13,7 +13,7 @@ Without a structured, centralized enterprise risk register, organizational units
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Sanitized inventory of enterprise tier-1 IT assets, cloud services (Microsoft 365, Entra ID), and critical operational databases.
-- **Tools:** Enterprise Risk Register (Excel/Sheets), Jira Service Management, NIST SP 800-30 Rev 1, ISO 31000 Framework.
+- **Tools:** Enterprise Risk Register & Governance Workpapers, Jira Service Management, NIST SP 800-30 Rev 1, ISO 31000 Framework.
 - **Authorization:** Authorized operational scope under Halisans Technologies cybersecurity governance framework; all corporate identifiers redacted.
 
 ## 3. Methodology

@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="../cybersecurity-banner.svg" width="100%" alt="Cybersecurity Defense & Operations Portfolio" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Adekunle-sec"><img src="https://img.shields.io/badge/Author%20Profile-Adekunle--sec-24292e?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adekunle-olanrewaju-20261844b"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/Adekunle-sec/cybersecurity-portfolio"><img src="https://img.shields.io/badge/Parent%20Portfolio-Cybersecurity%20Portfolio-38BDF8?style=for-the-badge&logo=shield&logoColor=white" /></a>
+  <a href="mailto:tayour.ola@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+---
+
 # Adekunle Olanrewaju | Identity & Access Management (IAM) Analyst
 
 **Identity Governance | Active Directory | Microsoft Entra ID | RBAC & Entitlement Matrices**
@@ -24,7 +37,7 @@ Beyond operational experience, I have independently developed technical projects
 
 ### Core Operational Responsibilities & Workflows:
 - **Enterprise Provisioning & Entitlement Management:**
-  - Provisioned corporate user identities in **Microsoft Entra ID (Azure AD)** and on-premises Active Directory Domain Services based on standardized RBAC entitlement matrices.
+  - Provisioned corporate user identities in **Microsoft Entra ID (Azure AD)** and on-premises Active Directory Domain Services based on standardized RBAC entitlement matrices and GRC compliance standards.
   - Managed corporate SaaS identity onboarding including **Jira Service Desk account provisioning** via the Jira Portal and mapping staff to departmental groups.
 - **Defense-in-Depth & MFA Security Layering:**
   - Implemented multi-factor authentication policies enforcing the three core authentication pillars:

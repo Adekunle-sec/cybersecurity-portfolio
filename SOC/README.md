@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="../cybersecurity-banner.svg" width="100%" alt="Cybersecurity Defense & Operations Portfolio" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Adekunle-sec"><img src="https://img.shields.io/badge/Author%20Profile-Adekunle--sec-24292e?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adekunle-olanrewaju-20261844b"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/Adekunle-sec/cybersecurity-portfolio"><img src="https://img.shields.io/badge/Parent%20Portfolio-Cybersecurity%20Portfolio-38BDF8?style=for-the-badge&logo=shield&logoColor=white" /></a>
+  <a href="mailto:tayour.ola@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+---
+
 # Adekunle Olanrewaju | Security Operations Center (SOC) Analyst
 
 **Microsoft Sentinel | Microsoft Defender XDR | Threat Modeling | Incident Response & CTI**

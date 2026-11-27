@@ -13,7 +13,7 @@ SOC leaders and analysts require real-time, consolidated operational visibility 
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Microsoft Sentinel Workbooks, Log Analytics Workspace, Azure Monitor.
-- **Tools:** KQL (Kusto Query Language), Sentinel Workbooks UI, JSON Visualization Engine, Excel.
+- **Tools:** KQL (Kusto Query Language), Sentinel Workbooks UI, JSON Visualization Engine.
 - **Authorization:** Approved dashboard development charter under Halisans Cybersecurity Operations.
 
 ## 3. Methodology

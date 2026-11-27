@@ -13,7 +13,7 @@ Over time, employees accumulate unnecessary privileges as they shift projects (p
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Active Directory security groups, Microsoft Entra ID Enterprise Applications, Microsoft 365 licensing portal.
-- **Tools:** Microsoft Entra Access Reviews, Excel VLOOKUP/Power Query Data Reconciliation, PowerShell.
+- **Tools:** Microsoft Entra Access Reviews, Automated Identity Data Reconciliation, PowerShell.
 - **Authorization:** Authorized quarterly identity audit mandated by Halisans Information Security Officer.
 
 ## 3. Methodology

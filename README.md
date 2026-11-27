@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/Adekunle-sec"><img src="https://img.shields.io/badge/Author%20Profile-Adekunle--sec-24292e?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/adekunle-olanrewaju-20261844b"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/Adekunle-sec/data-analytics-portfolio"><img src="https://img.shields.io/badge/Data%20Analytics%20Portfolio-Explore%20Data%20Labs-10B981?style=for-the-badge&logo=microsoftexcel&logoColor=white" /></a>
+  <a href="https://github.com/Adekunle-sec/data-analytics-portfolio"><img src="https://img.shields.io/badge/Data%20Analytics%20Portfolio-Explore%20Data%20Labs-10B981?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
   <a href="mailto:tayour.ola@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
@@ -122,7 +122,7 @@ cybersecurity-portfolio/
 ### 3. 📋 Governance, Risk & Compliance (GRC) & Audit Readiness
 **Primary Directory:** [`./GRC/`](./GRC/)  
 **Role:** GRC Analyst | **Period:** 2026 – Present  
-**Core Toolset:** ISO/IEC 27001:2022, NIST CSF 2.0, NIST SP 800-53 Rev 5, Risk Registers, Control Matrices, Jira Service Management, Excel
+**Core Toolset:** ISO/IEC 27001:2022, NIST CSF 2.0, NIST SP 800-53 Rev 5, Risk Registers, Control Matrices, Jira Service Management, Confluence
 
 #### Governance Methodologies:
 - **Enterprise Risk Register Modeling:** Continuous risk identification, threat-vulnerability mapping, likelihood/impact scoring, and residual risk computation.
@@ -146,7 +146,7 @@ cybersecurity-portfolio/
 ### 4. 🚀 Threat Modeling & Risk Assessment for a SaaS Product
 **Primary Directory:** [`./SOC/threat-modeling-risk-assessment-saas/`](./SOC/threat-modeling-risk-assessment-saas/)  
 **Role:** Threat Modeling & Risk Specialist  
-**Core Toolset:** OWASP Threat Dragon, STRIDE Framework, CVSS v3.1, Microsoft Excel, ISO 27001:2022, NIST SP 800-53 Rev 5
+**Core Toolset:** OWASP Threat Dragon, STRIDE Framework, CVSS v3.1, Risk Registers, ISO 27001:2022, NIST SP 800-53 Rev 5
 
 #### Architecture & Deliverables:
 - **System Scope:** Multi-tenant enterprise SaaS Academic Portal deployed on Azure App Services with Azure AD authentication, Redis caching, and PostgreSQL backend.

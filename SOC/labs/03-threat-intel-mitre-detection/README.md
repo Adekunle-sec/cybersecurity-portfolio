@@ -82,7 +82,7 @@ CommonSecurityLog
 ```
 
 ### 🔍 Production Detection Rule 2: Phishing Execution via Suspicious Parent-Child Process
-Detects `WINWORD.EXE` or `EXCEL.EXE` invoking shell interpreters (`powershell.exe`, `cmd.exe`, `wscript.exe`), a primary hallmark of weaponized email attachments ([T1566.001](https://attack.mitre.org/techniques/T1566/001/)).
+Detects Microsoft Office processes (such as Word or spreadsheet applications) invoking shell interpreters (`powershell.exe`, `cmd.exe`, `wscript.exe`), a primary hallmark of weaponized email attachments ([T1566.001](https://attack.mitre.org/techniques/T1566/001/)).
 
 ```kql
 DeviceProcessEvents

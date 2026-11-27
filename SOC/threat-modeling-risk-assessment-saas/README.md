@@ -3,6 +3,10 @@
 ### Production STRIDE Threat Model, Data Flow Diagram (DFD) & Comprehensive Risk Treatment Suite
 
 <p align="center">
+  <img src="../../cybersecurity-banner.svg" width="100%" alt="Cybersecurity Defense & Operations Portfolio" />
+</p>
+
+<p align="center">
   <a href="https://github.com/Adekunle-sec"><img src="https://img.shields.io/badge/Author%20Profile-Adekunle%20Olanrewaju-24292e?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://github.com/Adekunle-sec/cybersecurity-portfolio"><img src="https://img.shields.io/badge/Parent%20Portfolio-Cybersecurity%20Portfolio-38BDF8?style=for-the-badge&logo=shield&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/adekunle-olanrewaju-20261844b"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -152,7 +156,7 @@ From `Control_Mapping_Matrix.xlsx`, all engineered controls map directly to inte
 ## 🚀 How to Review & Replicate
 
 1. **Inspect Data Flow Diagram:** Open [`DFD.png`](./DFD.png) in any image viewer.
-2. **Review Spreadsheets:** Open [`Threat_Risk_Register.xlsx`](./Threat_Risk_Register.xlsx) and [`Risk_Treatment_Plan.xlsx`](./Risk_Treatment_Plan.xlsx) in Microsoft Excel or Google Sheets.
+2. **Review Spreadsheets:** Open [`Threat_Risk_Register.xlsx`](./Threat_Risk_Register.xlsx) and [`Risk_Treatment_Plan.xlsx`](./Risk_Treatment_Plan.xlsx) in any spreadsheet or tabular data viewer.
 3. **Open the Model in OWASP Threat Dragon:**
    - Install or launch [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/).
    - Click **Open an existing model**.

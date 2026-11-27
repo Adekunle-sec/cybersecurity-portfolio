@@ -13,7 +13,7 @@ Direct user-level permissions and ad-hoc security group assignment created an un
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Active Directory Domain Services, Azure RBAC, Microsoft Entra ID P2, Jira Service Desk.
-- **Tools:** Enterprise Entitlement Matrix (Excel/Sheets), PowerShell, Azure Role Definitions, AGDLP Architecture.
+- **Tools:** Enterprise Entitlement Matrix & Role Definitions, PowerShell, Azure Role Definitions, AGDLP Architecture.
 - **Authorization:** Approved directory restructuring charter authorized by Halisans Security Leadership.
 
 ## 3. Methodology

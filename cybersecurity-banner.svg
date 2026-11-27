@@ -59,7 +59,7 @@
 
   <!-- Gradient Sub-headline -->
   <text x="600" y="168" text-anchor="middle" fill="url(#projGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'SF Pro Text', sans-serif" font-size="19" font-weight="700" letter-spacing="1.8">
-    PRODUCTION INCIDENT INVESTIGATION • DETECTION LOGIC • BI MODELS
+    PRODUCTION INCIDENT INVESTIGATION • DETECTION ENGINEERING • IDENTITY &amp; GRC
   </text>
 
   <!-- Accent Divider Line -->
@@ -69,9 +69,9 @@
   <g transform="translate(600, 235)" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="13" fill="#94A3B8">
     <text x="0" y="0">
       <tspan fill="#38BDF8" font-weight="600">Sentinel &amp; Defender XDR</tspan>  •  
-      <tspan fill="#10B981" font-weight="600">KQL &amp; SQL Engines</tspan>  •  
-      <tspan fill="#F59E0B" font-weight="600">32,245-Row Excel Models</tspan>  •  
-      <tspan fill="#818CF8" font-weight="600">Power BI &amp; Tableau</tspan>
+      <tspan fill="#10B981" font-weight="600">KQL Analytic Rules</tspan>  •  
+      <tspan fill="#F59E0B" font-weight="600">STRIDE Threat Modeling</tspan>  •  
+      <tspan fill="#818CF8" font-weight="600">Entra ID &amp; ISO 27001</tspan>
     </text>
   </g>
 </svg>

@@ -13,7 +13,7 @@ During external audits, disorganized evidence retrieval and untracked control de
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Jira Service Management, Audit Evidence Repository, Active Directory change logs, SIEM audit trails.
-- **Tools:** Audit Evidence Index (Excel/Sheets), Jira Exception Workflow, PowerShell Log Exporters.
+- **Tools:** Audit Evidence Index & Control Matrices, Jira Exception Workflow, PowerShell Log Exporters.
 - **Authorization:** Authorized internal audit readiness scope sanctioned by Halisans IT Governance.
 
 ## 3. Methodology

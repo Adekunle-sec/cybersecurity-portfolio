@@ -13,7 +13,7 @@ Security teams frequently misattribute attacks or miss lateral movement stages b
 
 ## 2. Scope, environment and authorization
 - **Systems/data:** Microsoft Sentinel, MITRE ATT&CK Navigator v14, Defender XDR incident telemetry.
-- **Tools:** ATT&CK Navigator JSON, Excel Matrix Mapping, KQL Advanced Hunting.
+- **Tools:** ATT&CK Navigator JSON, MITRE ATT&CK Matrix Mapping, KQL Advanced Hunting.
 - **Authorization:** Authorized threat modeling scope under Halisans Cybersecurity Operations.
 
 ## 3. Methodology

@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="../cybersecurity-banner.svg" width="100%" alt="Cybersecurity Defense & Operations Portfolio" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Adekunle-sec"><img src="https://img.shields.io/badge/Author%20Profile-Adekunle--sec-24292e?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adekunle-olanrewaju-20261844b"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://github.com/Adekunle-sec/cybersecurity-portfolio"><img src="https://img.shields.io/badge/Parent%20Portfolio-Cybersecurity%20Portfolio-38BDF8?style=for-the-badge&logo=shield&logoColor=white" /></a>
+  <a href="mailto:tayour.ola@gmail.com"><img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+---
+
 # Adekunle Olanrewaju | Governance, Risk & Compliance (GRC) Analyst
 
 **Risk Assessment | ISO 27001 | Control Testing | Audit Readiness | NIST CSF**
@@ -61,7 +74,7 @@ As part of this unified monorepo, explore our full SaaS risk assessment in [`../
 
 - **Security Frameworks:** ISO/IEC 27001:2022, NIST Cybersecurity Framework (CSF 2.0), NIST SP 800-53 Rev 5, CIS Controls
 - **GRC Processes:** Risk Registers, Statement of Applicability (SoA), Gap Analysis, Third-Party Risk Assessment (TPRM), Audit Evidence Indexing
-- **Productivity & GRC Tools:** Jira Service Management, Confluence, Microsoft Excel / Google Sheets (Advanced Formulas & Modeling), GitHub
+- **Productivity & GRC Tools:** Jira Service Management, Confluence, GRC Workpapers, Control Matrices, GitHub
 - **Audit & Compliance Management:** Control Testing, Corrective Action Plans (CAP), Exception Request Workflows
 
 ---
