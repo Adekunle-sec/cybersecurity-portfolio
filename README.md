@@ -143,13 +143,14 @@ cybersecurity-portfolio/
 
 ---
 
-### 4. 🚀 Threat Modeling & Risk Assessment for a SaaS Product
+### 4. 🚀 Student Login Portal | Threat Modeling & Risk Assessment
 **Primary Directory:** [`./SOC/threat-modeling-risk-assessment-saas/`](./SOC/threat-modeling-risk-assessment-saas/)  
-**Role:** Threat Modeling & Risk Specialist  
+**Role:** Threat Modeling & Risk Specialist | **Status:** Production Security Audit (Halisans Technologies)  
 **Core Toolset:** OWASP Threat Dragon, STRIDE Framework, CVSS v3.1, Risk Registers, ISO 27001:2022, NIST SP 800-53 Rev 5
 
 #### Architecture & Deliverables:
-- **System Scope:** Multi-tenant enterprise SaaS Academic Portal deployed on Azure App Services with Azure AD authentication, Redis caching, and PostgreSQL backend.
+- **System Scope:** Cloud-hosted Student Login Portal for Halisans Technologies enabling students to register, securely authenticate, and view academic profiles over HTTPS/TLS.
+- **Three Core Processes:** Student Registration, Student Login, View Student Profile.
 - **STRIDE Threat Decomposition:** Comprehensive analysis across Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.
 - **Primary Deliverables:**
   - **Level-1 Data Flow Diagram (DFD):** [`DFD.png`](./SOC/threat-modeling-risk-assessment-saas/DFD.png) visual model illustrating trust boundaries and data flows.
