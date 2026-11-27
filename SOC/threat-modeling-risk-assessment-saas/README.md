@@ -1,6 +1,8 @@
-# 🛡️ Threat Modeling & Risk Assessment for a SaaS Product
+# 🛡️ Student Login Portal | Threat Modeling & Risk Assessment
 
-### Production STRIDE Threat Model, Data Flow Diagram (DFD) & Comprehensive Risk Treatment Suite
+### Halisans Technologies • Production Security Audit
+**Lead Security Analyst:** Adekunle Olanrewaju | **Status:** Production Security Audit  
+📍 Lagos, Nigeria · [LinkedIn](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b) · [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com) · [GitHub Profile](https://github.com/Adekunle-sec)
 
 <p align="center">
   <img src="../../cybersecurity-banner.svg" width="100%" alt="Cybersecurity Defense & Operations Portfolio" />
@@ -15,19 +17,49 @@
 
 ---
 
-## 📌 Repository Overview & Purpose
+## 📋 Executive Summary
 
-This repository contains the comprehensive **STRIDE Threat Modeling, Architectural Risk Assessment, and Security Control Engineering Suite** for a cloud-hosted Software-as-a-Service (SaaS) web application (**Student & Academic Self-Service Web Portal**).
+This repository documents a formal production security assessment of a proposed cloud-hosted **Student Login Portal** for **Halisans Technologies**. The portal enables students to register, securely authenticate, and view their own personal academic profiles over public networks. 
 
-Developed using **OWASP Threat Dragon v2.6.2**, this engagement deconstructs the application architecture, identifies multi-tier threat vectors across trust boundaries, calculates quantitative risk metrics (CVSS 3.1, Inherent vs. Residual Risk scores), formulates actionable treatment plans with designated asset owners, and maps security controls directly to **ISO/IEC 27001:2022 Annex A** and **NIST SP 800-53 Rev 5**.
+The security assessment utilizes **OWASP Threat Dragon v2.6.2** to formulate an architectural Data Flow Diagram (DFD Level-1), systematically decompose attack surfaces using the **STRIDE** methodology, establish a quantitative risk register (CVSS 3.1 & 25-scale risk matrix), cross-map controls directly to **ISO/IEC 27001:2022 Annex A** and **NIST SP 800-53 Rev 5**, and deliver an actionable risk treatment plan.
 
-> **Description:** The Repo contains the DFD and RISK register of a SaaS product.
+---
+
+## 🎯 Application Scope & Audit Boundaries
+
+### In-Scope Architecture
+- **External Entity:** Student accessing the portal via a modern web browser over untrusted public networks.
+- **Three Core Application Processes:**
+  1. `Student Registration`: Validates institutional eligibility, verifies student email, enforces password complexity, and provisions new accounts.
+  2. `Student Login`: Authenticates returning students via credentials and Multi-Factor Authentication (MFA), enforces sliding-window rate limiting, and issues cryptographically signed session tokens.
+  3. `View Student Profile`: Enforces strict session token binding and object-level authorization to allow students to retrieve and view their academic records.
+- **Data Store:** `Student Database` storing student account credentials, salted password hashes (Argon2id), MFA secrets, Personally Identifiable Information (PII), and academic transcript records.
+- **Known Communication Protocols:** Student Browser ↔ Application tier via encrypted **HTTPS / TLS 1.3** with HTTP Strict Transport Security (HSTS).
+
+### Architecture Verification Points (Confirmed with Developers):
+- **Backend-to-Database Protocol:** Mutually authenticated, encrypted database connection (TLS) over internal virtual network (VNet).
+- **Database Hosting:** Managed PostgreSQL instance deployed within a private subnet behind network security groups (NSGs).
+- **Session Mechanism:** Cryptographically signed, HTTP-only, SameSite Secure JWT session tokens with short expiration and refresh rotation.
+- **Authorization Enforcement:** Server-side RBAC validation checking JWT claims on every profile request to prevent IDOR / BOLA vulnerabilities.
+
+### Out of Scope:
+- Administrator backend management functions (isolated to internal management subnet).
+- Batch profile data import mechanisms.
+- Live penetration testing and active exploitation against production systems.
+
+---
+
+## 🎯 Assessment Objectives
+
+1. **DFD Modeling:** Translate the developer brief into a structured **Level-1 Data Flow Diagram (DFD)** featuring exactly the three core application processes.
+2. **Protocol & Data Flow Labeling:** Explicitly label all data flows, network boundaries, and transport security controls.
+3. **Trust Boundary Identification:** Define and justify institutional and operational trust perimeters separating the public internet, application compute tier, and database storage tier.
+4. **STRIDE Threat Modeling:** Apply the STRIDE framework (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) across all elements.
+5. **Quantitative Risk Scoring:** Score threat likelihood and impact on a 1–5 scale (derived from CVSS 3.1), document protective engineering controls, and establish a remediation roadmap with assigned asset owners.
 
 ---
 
 ## 🏗️ System Architecture & Data Flow Diagram (DFD)
-
-The target SaaS platform enables enrolled students to securely authenticate, register for institutional services, update sensitive personal contact records, and access academic grades over public networks.
 
 ### 🖼️ Level-1 Data Flow Diagram (DFD)
 <p align="center">
@@ -38,55 +70,55 @@ The target SaaS platform enables enrolled students to securely authenticate, reg
 
 ```mermaid
 flowchart LR
-    User["👤 Human User\n(External Entity / Internet)"]
+    Student["👤 Student\n(External Entity / Internet)"]
     
     subgraph AppBoundary ["Application Trust Boundary"]
-        Signup["⚙️ Signup Process\n(Registration & Verification)"]
-        Login["⚙️ Login Process\n(Authentication & MFA)"]
-        Profile["⚙️ Profile Checking\n(Access Control & DTOs)"]
+        Reg["⚙️ Student Registration\n(Validation & Provisioning)"]
+        Login["⚙️ Student Login\n(Authentication & MFA)"]
+        Profile["⚙️ View Student Profile\n(Access Control & Records)"]
     end
 
     subgraph DBBoundary ["Database Trust Boundary"]
-        DB[("🗄️ Relational Database\n(PII, Credentials, Grades)")]
+        DB[("🗄️ Student Database\n(PII, Credentials, Grades)")]
     end
 
-    User -- "HTTPS / TLS 1.3" --> Signup
-    User -- "HTTPS / TLS 1.3" --> Login
-    User -- "HTTPS / TLS 1.3" --> Profile
-    Signup -- "Encrypted DB Connection" --> DB
+    Student -- "HTTPS / TLS 1.3" --> Reg
+    Student -- "HTTPS / TLS 1.3" --> Login
+    Student -- "HTTPS / TLS 1.3" --> Profile
+    Reg -- "Encrypted DB Connection" --> DB
     Login -- "Encrypted DB Connection" --> DB
     Profile -- "Encrypted DB Connection" --> DB
 ```
 
-1. **External Entity (`Human User`):** Unauthenticated and authenticated users operating outside the institutional trust perimeter on untrusted public networks.
+1. **External Entity (`Student`):** External users interacting from personal devices over public internet infrastructure outside corporate trust boundaries.
 2. **Application Processing Tier (`Application Trust Boundary`):**
-   - **Signup Process:** Validates institutional eligibility, verifies university email ownership, enforces password strength, and provisions new accounts.
-   - **Login Process:** Authenticates returning students via credentials and Multi-Factor Authentication (MFA), enforces sliding-window rate limiting, and issues cryptographically signed session tokens.
-   - **Profile Checking Process:** Enforces strict session token binding and object-level authorization to allow students to view and update permitted contact details.
+   - **Student Registration Process:** Validates input sanitization, enforces password complexity, and provisions student identities.
+   - **Student Login Process:** Validates credentials, issues MFA challenges, throttles brute-force attempts, and mints secure session tokens.
+   - **View Student Profile Process:** Enforces authorization checks ensuring students can only access their personal academic records.
 3. **Data Persistence Tier (`Database Trust Boundary`):**
-   - **Relational Database:** Isolated backend data tier storing salted password hashes (Argon2id), MFA secrets, student Personally Identifiable Information (PII), and academic transcripts.
-4. **Data Flows (`HTTPS / TLS 1.3`):** Bidirectional, encrypted communication channels protected by Transport Layer Security (TLS 1.3) with HTTP Strict Transport Security (HSTS).
+   - **Student Database:** Encrypted-at-rest database storing password hashes, profile details, and grade histories.
+4. **Data Flows (`HTTPS / TLS 1.3`):** Secure encrypted transport channels enforcing strong cipher suites and HSTS.
 
 ---
 
 ## 🎯 STRIDE Threat Taxonomy & Attack Scenarios
 
-The architecture was evaluated against the **STRIDE** methodology (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege):
+The architecture was systematically evaluated against the **STRIDE** methodology:
 
 | STRIDE Category | Risk ID | Threat Scenario | Primary Attack Vector | Inherent Severity |
 |:---|:---|:---|:---|:---:|
-| **Spoofing** | `NST01` | Student Account Takeover & Identity Spoofing | Automated credential stuffing, password spraying, or session token hijacking over unmanaged networks. | **Critical** (14.04) |
-| **Tampering** | `NST06` | Unauthorized Record Alteration & Parameter Manipulation | HTTP request payload manipulation (mass assignment) or SQL/NoSQL injection crossing the database boundary to falsify grades or enrollment status. | **Critical** (14.04) |
-| **Repudiation** | `NST29` | Untraceable Authentication & Activity | Disabling or bypassing audit logging during malicious account access, leaving no forensic audit trail. | **Medium** (4.90) |
-| **Information Disclosure** | `NST30` | Insecure Direct Object Reference (IDOR) & PII Exposure | Manipulating student profile IDs in HTTP requests to access unauthorized peer records and transcript data. | **High** (5.46) |
-| **Denial of Service** | `NST17` | Authentication Endpoint Flooding & CPU Starvation | Volumetric HTTP floods targeting CPU-intensive password hashing functions (Argon2id/bcrypt) during critical exam/registration windows. | **High** (5.04) |
-| **Elevation of Privilege**| `NST38` | Horizontal & Vertical Privilege Escalation | Exploiting broken object-level authorization (BOLA) or role parameter tampering to gain administrative permissions. | **High** (9.36) |
+| **Spoofing** | `NST01` | Student Account Takeover & Identity Impersonation | Automated credential stuffing, password spraying, or session token interception over untrusted networks. | **Critical** (14.04) |
+| **Tampering** | `NST06` | Unauthorized Record Alteration & Parameter Tampering | HTTP request payload manipulation (mass assignment) or SQL injection crossing the database boundary to alter grades. | **Critical** (14.04) |
+| **Repudiation** | `NST29` | Untraceable Authentication & Activity Denial | Users denying performed actions due to inadequate audit logging or disabled security event telemetry. | **Medium** (4.90) |
+| **Information Disclosure** | `NST30` | Insecure Direct Object Reference (IDOR) & PII Exposure | Manipulating student profile IDs in HTTP requests to access unauthorized peer transcripts and personal contact data. | **High** (5.46) |
+| **Denial of Service** | `NST17` | Authentication Endpoint Flooding & CPU Starvation | Volumetric HTTP floods targeting CPU-intensive password hashing functions (Argon2id/bcrypt) during peak registration windows. | **High** (5.04) |
+| **Elevation of Privilege**| `NST38` | Horizontal & Vertical Privilege Escalation | Exploiting broken object-level authorization (BOLA) or role parameter tampering to gain elevated administrative rights. | **High** (9.36) |
 
 ---
 
 ## 📊 Quantitative Threat Risk Register Summary
 
-From `Threat_Risk_Register.xlsx`, all identified risks were quantified using 5x5 Likelihood and Impact matrices and standard CVSS 3.1 scoring formulas:
+From `Threat_Risk_Register.xlsx`, all identified risks were quantified using standard 5x5 Likelihood and Impact matrices and CVSS 3.1 scoring formulas:
 
 ```text
 Inherent Risk Score = Likelihood (1–5) × Impact (1–5) [Converted from CVSS v3.1 10-scale by ÷ 2]
@@ -119,7 +151,7 @@ From `Risk_Treatment_Plan.xlsx`, concrete defensive security engineering control
 
 ### 1. Perimeter & Edge Defense (WAF & Rate Limiting)
 - **Deployment:** Cloudflare / AWS WAF with Layer 7 DDoS mitigation and automated bot detection on `/login` and `/signup`.
-- **Throttling:** Sliding-window rate limiting per IP and account (maximum 5 failed attempts per 10 minutes) with step-up CAPTCHA challenges to prevent credential spraying.
+- **Throttling:** Sliding-window rate limiting per IP and account (maximum 5 failed attempts per 10 minutes) with step-up challenges to prevent credential spraying.
 - **Resource Protection:** Enforce maximum password input length validation (128 characters) before executing CPU-intensive Argon2id hashing algorithms.
 
 ### 2. Application & API Security (Anti-IDOR & Mass Assignment)
@@ -127,9 +159,14 @@ From `Risk_Treatment_Plan.xlsx`, concrete defensive security engineering control
 - **Strict DTO Allow-Listing:** Implement JSON Schema validation rejecting unexpected fields (`role`, `is_admin`, `gpa`) to eliminate mass assignment vulnerabilities.
 - **Frontend Hardening:** Enforce strict Content Security Policy (CSP) with nonces, `X-Content-Type-Options: nosniff`, and context-aware output encoding to block XSS.
 
-### 3. Database & Data Layer Integrity
-- **Parameterized Queries:** Strict usage of prepared statements through an audited Object-Relational Mapper (ORM), neutralizing SQL injection vectors.
-- **Data-at-Rest Encryption:** Transparent Data Encryption (TDE) with AES-256 for all persistent database volumes and automated backups.
+### 3. Identity Governance & Session Hardening
+- **Multi-Factor Authentication (MFA):** Enforce mandatory TOTP or FIDO2 WebAuthn authentication for returning student logins.
+- **Session Protection:** Issue ephemeral, rotating access tokens stored strictly in `HttpOnly`, `Secure`, `SameSite=Strict` cookies to block token exfiltration via client-side scripts.
+- **Credential Storage:** Hash all authentication passwords using **Argon2id** ($m=65536, t=3, p=4$) with per-user cryptographic salts.
+
+### 4. Database & Persistence Layer Security
+- **Data Protection:** Implement Transparent Data Encryption (TDE) for data-at-rest (AES-256) and TLS 1.3 for data-in-transit across the database subnet.
+- **Zero Raw SQL Concatenation:** Mandate Object-Relational Mapping (ORM) parameterized queries across all database drivers to eliminate SQL injection.
 - **Connection Isolation:** Connection pooling capped via PgBouncer with aggressive query timeouts to prevent connection pool starvation during volumetric attacks.
 
 ---
