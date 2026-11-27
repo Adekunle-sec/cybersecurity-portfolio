@@ -1,6 +1,6 @@
 # Adekunle Olanrewaju | Identity & Access Management (IAM) Analyst
 
-**Identity Governance | Active Directory | Microsoft Entra ID | RBAC**
+**Identity Governance | Active Directory | Microsoft Entra ID | RBAC & Entitlement Matrices**
 
 📍 Lagos, Nigeria · [LinkedIn](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b) · [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com) · [GitHub Profile](https://github.com/Adekunle-sec)
 
@@ -22,17 +22,22 @@ Beyond operational experience, I have independently developed technical projects
 **Period:** 2026 – Present  
 **Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs
 
-### Responsibilities:
-- **Joiner–Mover–Leaver Workflow:** Document authorized provisioning, role transitions, and deprovisioning with approval audit trails and ticket closure evidence.
-- **Quarterly Access Review:** Review entitlements across business units, flag privilege creep exceptions, record asset owner approvals, and track remediation.
-- **RBAC & Least Privilege:** Design and maintain entitlement matrices, validating security group assignments and separating administrative duties.
-- **Active Directory & Entra ID Administration:** Configure user accounts, organizational units (OUs), Group Policy Objects (GPOs), and Conditional Access policies.
-
-### Impact Highlights:
-- Implemented and tested identity and access management workflows within the `HALISANS.COM` Active Directory environment, covering user provisioning, role-based access control (RBAC), and Group Policy security configurations.
-- Developed identity lifecycle documentation covering Joiner, Mover, and Leaver (JML) processes, including access requests, approval workflows, provisioning, and account deactivation procedures.
-- Configured and evaluated security group permissions for `HLS-SOC` and other organizational units to enforce role-based access and least-privilege principles.
-- Implemented access control documentation, RBAC entitlement matrices, and user access review records to support consistent identity governance and audit readiness.
+### Core Operational Responsibilities & Workflows:
+- **Enterprise Provisioning & Entitlement Management:**
+  - Provisioned corporate user identities in **Microsoft Entra ID (Azure AD)** and on-premises Active Directory Domain Services based on standardized RBAC entitlement matrices.
+  - Managed corporate SaaS identity onboarding including **Jira Service Desk account provisioning** via the Jira Portal and mapping staff to departmental groups.
+- **Defense-in-Depth & MFA Security Layering:**
+  - Implemented multi-factor authentication policies enforcing the three core authentication pillars:
+    - *What you know:* Passcodes, complex passwords, knowledge-based security questions.
+    - *What you are:* Biometrics (fingerprint, facial recognition, voiceprint).
+    - *What you have:* Hardware tokens (FIDO2 keys) and software time-based one-time password (TOTP) authenticators.
+- **Role-Based Access Control (RBAC) & Administrative Segregation:**
+  - Designed role segregation structures within **Microsoft Defender XDR** (`Defender -> Configuration -> Permissions -> Roles`), defining granular permissions for **SOC Manager, SOC Tier 1, and SOC Tier 2** analysts to enforce least-privilege principles.
+  - Provisioned administrative access for cloud SIEM via **Microsoft Sentinel Resource Group IAM** role assignments.
+  - Configured automated security alert email notifications across user groups in Defender XDR (`Settings -> Microsoft Defender XDR -> Email notifications`) in compliance with **ISO/IEC 27001:2022 Control A5.18**.
+- **GRC Compliance & Audit Evidence Delivery:**
+  - Collaborated directly with the GRC team to provide auditable evidence of user creation, group memberships, and role assignments, validating compliance against organizational governance rules.
+  - Automated identity lifecycle and alert handling via Sentinel Automation Rules.
 
 ---
 
@@ -61,6 +66,7 @@ Beyond operational experience, I have independently developed technical projects
 - **Access Governance:** Role-Based Access Control (RBAC), Least Privilege, Segregation of Duties (SOD), Access Certifications
 - **Administration & Scripting:** PowerShell (`ActiveDirectory` module), Group Policy Management Console (GPMC)
 - **ITSM & Audit:** Jira Service Management, ServiceNow Identity Workflows, Audit Evidence Repositories
+- **Standards:** ISO/IEC 27001:2022 Control A5.18, NIST SP 800-63B (Digital Identity Guidelines)
 
 ---
 

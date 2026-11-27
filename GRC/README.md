@@ -19,15 +19,22 @@ I am a **Governance, Risk & Compliance (GRC) Analyst** with practical expertise 
 **Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs
 
 ### Selected Responsibilities & Governance Activities:
-- **Enterprise Risk Assessment:** Maintain enterprise risk registers, evaluating threat likelihood and business impact to calculate inherent and residual risk scores.
-- **ISO/IEC 27001 Control Assessment:** Map Annex A organizational, people, physical, and technological controls to audit evidence, identifying gaps and establishing corrective action plans.
+- **Enterprise Risk Assessment & Registers:** Maintain enterprise risk registers, evaluating threat likelihood and business impact to calculate inherent and residual risk scores.
+- **ISO/IEC 27001:2022 Control Assessments:** Map organizational implementations against ISO/IEC 27001:2022 Annex A controls, identifying gaps and tracking remediation:
+  - *Control A5.7 (Threat Intelligence):* Auditing integration of threat intelligence feeds (OTX, SOCRadar) into operational SOC detection rules.
+  - *Control A5.18 (Access Rights):* Reviewing IAM evidence for user provisioning, group memberships, and role segregation across Defender XDR and Sentinel.
+  - *Controls A8.15 & A8.16 (Logging & Monitoring):* Verifying log retention, DCR event collection (Event IDs `4624`, `4625`, `4740`), and monitoring integrity.
 - **Policy & Procedure Development:** Author and review core information security policies including Access Control, Acceptable Use, Incident Response, and Vendor Risk Management.
 - **Audit Evidence & Exception Tracking:** Construct structured audit evidence indexes, conduct periodic control effectiveness testing, and track non-conformities to resolution.
 
-### Impact Highlights:
-- Established a centralized enterprise risk register categorizing 50+ threat scenarios across infrastructure, cloud, and third-party dependencies with defined risk treatment paths.
-- Conducted internal control effectiveness reviews across ISO 27001:2022 Annex A controls, identifying control deficiencies and tracking remediation milestones.
-- Standardized documentation templates for Joiner-Mover-Leaver, change management, and incident escalation procedures to ensure continuous compliance.
+---
+
+## 🚀 Associated Monorepo Project: Threat Modeling & Risk Register
+
+As part of this unified monorepo, explore our full SaaS risk assessment in [`../threat-modeling-risk-assessment-saas/`](../threat-modeling-risk-assessment-saas/):
+- **1,000-Row Threat Risk Register (`Threat_Risk_Register.xlsx`):** Quantitative STRIDE risk assessment with CVSS v3.1 calculations.
+- **Risk Treatment Plan (`Risk_Treatment_Plan.xlsx`):** Ownership assignments, mitigation actions, and residual risk tracking.
+- **Control Mapping Matrix (`Control_Mapping_Matrix.xlsx`):** Cross-mapped to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5.
 
 ---
 

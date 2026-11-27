@@ -1,6 +1,6 @@
 # Adekunle Olanrewaju | Security Operations Center (SOC) Analyst
 
-**Microsoft Sentinel | Microsoft Defender | Threat Modeling | Detection & Incident Response**
+**Microsoft Sentinel | Microsoft Defender XDR | Threat Modeling | Incident Response & CTI**
 
 📍 Lagos, Nigeria · [LinkedIn](https://www.linkedin.com/in/adekunle-olanrewaju-20261844b) · [tayour.ola@gmail.com](mailto:tayour.ola@gmail.com) · [GitHub Profile](https://github.com/Adekunle-sec)
 
@@ -18,20 +18,38 @@ I am a **Security Operations Center (SOC) Analyst** with hands-on technical prof
 **Period:** 2026 – Present  
 **Environment:** Supervised Cybersecurity Operations & Enterprise Defense Labs  
 
-### Selected Responsibilities & Operational Activities
-- **Threat Modeling & Attack Surface Analysis:** Conducted STRIDE architectural threat models for multi-tenant SaaS environments using OWASP Threat Dragon, formulating risk registers and ISO/NIST mitigation plans.
-- **Authentication Alert Investigation:** Analyzed Windows security events (`4624`, `4625`, `4770`) and Entra ID sign-in logs using Kusto Query Language (KQL) to triage anomalous authentications.
-- **Defender Endpoint Triage & Investigation:** Investigated Microsoft Defender XDR alerts, collected endpoint timeline evidence, assessed threat severity, and recommended host containment measures.
-- **Sentinel SOAR Automation:** Architected automated incident triage and notification workflows in Azure Logic Apps triggered upon incident generation in Microsoft Sentinel.
-- **Threat Intelligence & MITRE Mapping:** Evaluated OTX and threat feeds, extracting indicators of compromise (IoCs) and engineering detection rules mapped to MITRE ATT&CK tactics and techniques.
+### 🛡️ Architectural Foundations & Operational Triad
+- **The Core Triage Definitions:**
+  - **Event:** Any baseline activity occurring across endpoints, servers, or directory services (e.g., standard user logon).
+  - **Alert:** An automated system notification indicating an anomalous or threshold-breaching event (*"Hey, look at this!"*).
+  - **Incident:** A verified security event confirmed by an analyst as a tangible threat requiring formal containment, remediation, and root-cause analysis.
+- **Defense-in-Depth Architecture:**
+  - **Microsoft Defender XDR:** The tactical security force on the ground inspecting local endpoints, user identities, and email channels to intercept and halt malicious activity at the point of origin.
+  - **Microsoft Sentinel SIEM/SOAR:** The centralized surveillance command center aggregating feeds from Defender, network firewalls, Linux servers, and multi-cloud infrastructure for enterprise-wide correlation.
+- **Hybrid Device Onboarding via Azure Arc & Azure Monitor Agent (AMA):**
+  - *Linux Host Onboarding:* `chmod +x OnboardAzureArc.sh && sudo ./OnboardAzureArc.sh` (verification: `sudo azcmagent show`).
+  - *Windows Host Onboarding:* `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process; .\OnboardAzureArc.ps1` (verification: `azcmagent show`).
+  - *Data Collection Rules (DCR):* XPath telemetry filtering ingesting critical authentication events:
+    `security!*[System[(EventID=4624 OR EventID=4625 OR EventID=4740)]]`
+- **Kerberos Authentication Architecture:**
+  - Deconstructed the ticket-granting security model: **Authentication Server (AS)** verifying client credentials to issue a **Ticket Granting Ticket (TGT)**, **Ticket Granting Server (TGS)** exchanging the TGT for service tickets, and secure client-service mutual authentication.
+  - Aligned to **ISO/IEC 27001 Controls A8.15 & A8.16 (Logging and Monitoring)**.
+- **Custom Threat Indicator Blocking:**
+  - Automated threat mitigation via Microsoft Defender: `Settings -> Endpoints -> Indicators -> File hashes -> Add indicator -> Action: Block execution`.
 
 ---
 
 ## 🚀 Flagship Project: Threat Modeling & Risk Assessment for a SaaS Product
 
-| Subproject / Repository | Focus & Architecture | Evidence & Deliverables |
+As part of our cybersecurity monorepo, the comprehensive Threat Modeling and Risk Assessment module is located in [`../threat-modeling-risk-assessment-saas/`](../threat-modeling-risk-assessment-saas/):
+
+| Deliverable | Description | File Link |
 |---|---|---|
-| **[Threat Modeling & Risk Assessment for a SaaS Product](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/)**<br>*(Standalone repo: [threat-modeling-risk-assessment-saas](https://github.com/Adekunle-sec/threat-modeling-risk-assessment-saas))* | STRIDE threat modeling and quantitative risk assessment of an enterprise multi-tenant SaaS application running on Azure. | • [OWASP Threat Dragon DFD](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/DFD.png)<br>• [1000-Row Threat Risk Register (XLSX)](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/Threat_Risk_Register.xlsx)<br>• [Risk Treatment Plan (XLSX)](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/Risk_Treatment_Plan.xlsx)<br>• [Control Mapping Matrix (ISO 27001 / NIST 800-53)](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/Control_Mapping_Matrix.xlsx)<br>• [OWASP Threat Dragon Report (PDF)](./Threat-Modeling-and-Risk-Assessment-for-a-SaaS-Product/OWASP_Threat_Dragon_Report.pdf) |
+| **Level-1 Data Flow Diagram (DFD)** | Visual architectural model of the SaaS Academic Portal showing trust boundaries, processes, data stores, and external entities. | [View DFD (`DFD.png`)](../threat-modeling-risk-assessment-saas/DFD.png) |
+| **1,000-Row Threat Risk Register** | Quantitative and qualitative STRIDE risk register calculating CVSS v3.1 base scores, likelihood, and business impact. | [Download Register (`Threat_Risk_Register.xlsx`)](../threat-modeling-risk-assessment-saas/Threat_Risk_Register.xlsx) |
+| **Risk Treatment Plan** | Actionable mitigation matrix detailing risk acceptance, avoidance, mitigation, designated owners, and residual risk. | [Download Plan (`Risk_Treatment_Plan.xlsx`)](../threat-modeling-risk-assessment-saas/Risk_Treatment_Plan.xlsx) |
+| **Control Mapping Matrix** | Comprehensive cross-mapping of identified threats to ISO/IEC 27001:2022 Annex A and NIST SP 800-53 Rev 5 controls. | [Download Matrix (`Control_Mapping_Matrix.xlsx`)](../threat-modeling-risk-assessment-saas/Control_Mapping_Matrix.xlsx) |
+| **OWASP Threat Dragon Report** | 24-page formal threat assessment report summarizing architectural weaknesses and mitigation roadmaps. | [View Report (`OWASP_Threat_Dragon_Report.pdf`)](../threat-modeling-risk-assessment-saas/OWASP_Threat_Dragon_Report.pdf) |
 
 ---
 
@@ -52,9 +70,9 @@ Located in **[`./threat-intelligence-and-detection/`](./threat-intelligence-and-
 
 | Analysis Project | Focus | Reference |
 |---|---|---|
-| **Threat Intelligence Assessment** | Evaluated threat feeds (AlienVault OTX, SOC Radar) for relevance against organizational assets. | [View Case Study](./threat-intelligence-and-detection/case-studies/01-threat-intelligence-assessment/) |
+| **Threat Intelligence Assessment** | Evaluated threat feeds (AlienVault OTX, SOCRadar, VirusTotal) for relevance against organizational assets. | [View Case Study](./threat-intelligence-and-detection/case-studies/01-threat-intelligence-assessment/) |
 | **IoC-to-Detection Handoff** | Converted extracted file hashes, domain names, and IP indicators into operational KQL / Sigma rules. | [View Case Study](./threat-intelligence-and-detection/case-studies/02-ioc-to-detection-handoff/) |
-| **MITRE ATT&CK Mapping** | Mapped adversary behaviors and observed TTPs against the MITRE ATT&CK enterprise matrix. | [View Case Study](./threat-intelligence-and-detection/case-studies/03-mitre-attandck-mapping/) |
+| **MITRE ATT&CK Mapping** | Mapped adversary behaviors and observed TTPs (APT29, LockBit 3.0) against the MITRE ATT&CK enterprise matrix. | [View Case Study](./threat-intelligence-and-detection/case-studies/03-mitre-attandck-mapping/) |
 | **Security Investigation Report** | Sanitized end-to-end incident investigation report detailing root cause analysis and post-incident hardening. | [View Case Study](./threat-intelligence-and-detection/case-studies/04-security-investigation-report/) |
 
 ---
@@ -71,10 +89,10 @@ Located in **[`./threat-intelligence-and-detection/`](./threat-intelligence-and-
 
 ## 🛠️ Technical Capabilities & Tooling
 
-- **SIEM / XDR:** Microsoft Sentinel, Microsoft Defender for Endpoint, Log Analytics Workspaces
+- **SIEM / XDR:** Microsoft Sentinel, Microsoft Defender for Endpoint, Log Analytics Workspaces, Splunk, Wazuh
 - **Query Languages:** KQL (Kusto Query Language), PowerShell, Bash
 - **Threat Modeling & Risk:** OWASP Threat Dragon, STRIDE framework, CVSS v3.1 scoring, DFD Level-0/1
-- **Threat Intelligence:** AlienVault OTX, VirusTotal, MITRE ATT&CK Enterprise Matrix, MISP
+- **Threat Intelligence:** AlienVault OTX, SOCRadar, VirusTotal, MITRE ATT&CK Enterprise Matrix, MISP
 - **Automation / SOAR:** Azure Logic Apps, Sentinel Playbooks, Webhook integrations
 - **ITSM & Ticketing:** Jira Service Management, ServiceNow ticketing workflows
 
